@@ -44,7 +44,7 @@
     {
         "question": "Which of the following are valid Terraform functions?",
         "options": ["length", "count", "size", "number"],
-        "answer": ["length", "count"],
+        "answer": ["length"],
         "multiple": true
     },
     {
@@ -155,12 +155,6 @@
         "answer": ["terraform workspace delete"],
         "multiple": false
     },
-    {
-    "question": "What is the default state file format used by Terraform?",
-    "options": ["JSON", "YAML", "XML", "HCL"],
-    "answer": ["JSON"],
-    "multiple": false
-  },
   {
     "question": "Which of the following are valid Terraform data sources?",
     "options": ["aws_ami", "google_compute_image", "azure_storage_account", "docker_image"],
@@ -207,12 +201,6 @@
     "question": "Which of the following are valid Terraform commands for refreshing the state?",
     "options": ["terraform refresh", "terraform update", "terraform sync", "terraform reload"],
     "answer": ["terraform refresh"],
-    "multiple": false
-  },
-  {
-    "question": "Which of the following are valid Terraform commands for validating a configuration?",
-    "options": ["terraform validate", "terraform check", "terraform verify", "terraform inspect"],
-    "answer": ["terraform validate"],
     "multiple": false
   },
   {
@@ -324,18 +312,6 @@
     "multiple": false
   },
   {
-    "question": "Which of the following are valid Terraform commands for locking the state?",
-    "options": ["terraform state lock", "terraform state hold", "terraform state secure", "terraform state protect"],
-    "answer": ["terraform state lock"],
-    "multiple": false
-  },
-  {
-    "question": "Which of the following are valid Terraform commands for unlocking the state?",
-    "options": ["terraform state unlock", "terraform state release", "terraform state unhold", "terraform state unsecure"],
-    "answer": ["terraform state unlock"],
-    "multiple": false
-  },
-  {
     "question": "What is the primary purpose of a Terraform backend?",
     "options": ["Store state files", "Manage configuration files", "Track resource dependencies", "Automate infrastructure changes"],
     "answer": ["Store state files"],
@@ -369,12 +345,6 @@
     "question": "Which of the following are valid Terraform backend configuration options?",
     "options": ["organization", "workspace", "bucket", "All of the above"],
     "answer": ["All of the above"],
-    "multiple": false
-  },
-  {
-    "question": "What is the purpose of state file locking in Terraform backends?",
-    "options": ["Prevent simultaneous changes to the state file", "Encrypt the state file", "Backup the state file", "Validate the state file"],
-    "answer": ["Prevent simultaneous changes to the state file"],
     "multiple": false
   },
   {

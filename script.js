@@ -112,6 +112,10 @@ function submitExam(questions) {
     if (scoreElement) {
         scoreElement.innerText = `You scored ${score} out of ${questions.length}`;
     }
+
+    // Scrolls to the top-left corner of the page smoothly.
+    // Use behavior: 'auto' for an instant jump.
+    window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
 // Helper function to compare arrays (order might matter depending on use case)

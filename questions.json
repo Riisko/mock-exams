@@ -1,0 +1,956 @@
+[
+    {
+        "question": "What is the primary purpose of Terraform?",
+        "options": ["Infrastructure as Code", "Configuration Management", "Continuous Integration", "Continuous Deployment"],
+        "answer": "Infrastructure as Code",
+        "multiple": false
+    },
+    {
+        "question": "Which of the following are valid Terraform commands?",
+        "options": ["terraform init", "terraform plan", "terraform apply", "terraform destroy"],
+        "answer": ["terraform init", "terraform plan", "terraform apply", "terraform destroy"],
+        "multiple": true
+    },
+    {
+        "question": "Which command is used to initialize a Terraform configuration?",
+        "options": ["terraform init", "terraform plan", "terraform apply", "terraform destroy"],
+        "answer": "terraform init",
+        "multiple": false
+    },
+    {
+        "question": "What is the default file name for the Terraform state file?",
+        "options": ["terraform.tfstate", "state.tf", "terraform.state", "statefile.tf"],
+        "answer": "terraform.tfstate",
+        "multiple": false
+    },
+    {
+        "question": "Which of the following is NOT a valid Terraform provider?",
+        "options": ["aws", "azure", "google", "docker"],
+        "answer": "docker",
+        "multiple": false
+    },
+    {
+        "question": "What is the purpose of the 'terraform plan' command?",
+        "options": ["To create an execution plan", "To apply the configuration", "To destroy the infrastructure", "To initialize the configuration"],
+        "answer": "To create an execution plan",
+        "multiple": false
+    },
+    {
+        "question": "Which of the following is a benefit of using Terraform?",
+        "options": ["Automate infrastructure changes", "Manual configuration of resources", "Limited cloud provider support", "No version control integration"],
+        "answer": "Automate infrastructure changes",
+        "multiple": false
+    },
+    {
+        "question": "What is the purpose of the 'terraform apply' command?",
+        "options": ["To create an execution plan", "To apply the configuration", "To destroy the infrastructure", "To initialize the configuration"],
+        "answer": "To apply the configuration",
+        "multiple": false
+    },
+    {
+        "question": "Which of the following is a valid Terraform backend?",
+        "options": ["local", "remote", "cloud", "network"],
+        "answer": "local",
+        "multiple": false
+    },
+    {
+        "question": "What is the purpose of the 'terraform destroy' command?",
+        "options": ["To create an execution plan", "To apply the configuration", "To destroy the infrastructure", "To initialize the configuration"],
+        "answer": "To destroy the infrastructure",
+        "multiple": false
+    },
+    {
+        "question": "Which of the following is NOT a valid Terraform provisioner?",
+        "options": ["local-exec", "remote-exec", "file", "shell"],
+        "answer": "shell",
+        "multiple": false
+    },
+    {
+        "question": "What is the purpose of the 'terraform validate' command?",
+        "options": ["To check the syntax of the configuration", "To apply the configuration", "To destroy the infrastructure", "To initialize the configuration"],
+        "answer": "To check the syntax of the configuration",
+        "multiple": false
+    },
+    {
+        "question": "Which of the following is a valid Terraform resource?",
+        "options": ["aws_instance", "azure_vm", "google_compute", "docker_container"],
+        "answer": "aws_instance",
+        "multiple": false
+    },
+    {
+        "question": "What is the purpose of the 'terraform output' command?",
+        "options": ["To display the output values", "To apply the configuration", "To destroy the infrastructure", "To initialize the configuration"],
+        "answer": "To display the output values",
+        "multiple": false
+    },
+    {
+        "question": "Which of the following is a valid Terraform variable type?",
+        "options": ["string", "number", "boolean", "list"],
+        "answer": "string",
+        "multiple": false
+    },
+    {
+        "question": "What is the purpose of the 'terraform fmt' command?",
+        "options": ["To format the configuration files", "To apply the configuration", "To destroy the infrastructure", "To initialize the configuration"],
+        "answer": "To format the configuration files",
+        "multiple": false
+    },
+    {
+        "question": "Which of the following is a valid Terraform module?",
+        "options": ["aws_vpc", "azure_network", "google_vpc", "docker_network"],
+        "answer": "aws_vpc",
+        "multiple": false
+    },
+    {
+        "question": "What is the purpose of the 'terraform state' command?",
+        "options": ["To manage the state file", "To apply the configuration", "To destroy the infrastructure", "To initialize the configuration"],
+        "answer": "To manage the state file",
+        "multiple": false
+    },
+    {
+        "question": "Which of the following is a valid Terraform workspace command?",
+        "options": ["terraform workspace new", "terraform workspace list", "terraform workspace select", "terraform workspace delete"],
+        "answer": "terraform workspace list",
+        "multiple": false
+    },
+    {
+        "question": "What is the purpose of the 'terraform import' command?",
+        "options": ["To import existing resources into the state file", "To apply the configuration", "To destroy the infrastructure", "To initialize the configuration"],
+        "answer": "To import existing resources into the state file",
+        "multiple": false
+    },
+    {
+        "question": "Which of the following is a valid Terraform version constraint?",
+        "options": [">= 0.12.0", "<= 0.12.0", "~> 0.12.0", "^ 0.12.0"],
+        "answer": "~> 0.12.0",
+        "multiple": false
+    },
+    {
+        "question": "What is the purpose of the 'terraform taint' command?",
+        "options": ["To mark a resource for recreation", "To apply the configuration", "To destroy the infrastructure", "To initialize the configuration"],
+        "answer": "To mark a resource for recreation",
+        "multiple": false
+    },
+    {
+        "question": "Which of the following is a valid Terraform function?",
+        "options": ["length", "count", "size", "number"],
+        "answer": "length",
+        "multiple": false
+    },
+    {
+        "question": "What is the purpose of the 'terraform graph' command?",
+        "options": ["To generate a visual representation of the configuration", "To apply the configuration", "To destroy the infrastructure", "To initialize the configuration"],
+        "answer": "To generate a visual representation of the configuration",
+        "multiple": false
+    },
+    {
+        "question": "Which of the following is a valid Terraform security feature?",
+        "options": ["Encryption of state files", "Manual configuration of resources", "Limited cloud provider support", "No version control integration"],
+        "answer": "Encryption of state files",
+        "multiple": false
+    },
+    {
+        "question": "What is the purpose of the 'terraform workspace new' command?",
+        "options": ["To create a new workspace", "To apply the configuration", "To destroy the infrastructure", "To initialize the configuration"],
+        "answer": "To create a new workspace",
+        "multiple": false
+    },
+    {
+        "question": "Which of the following is a valid Terraform backend configuration?",
+        "options": ["local", "remote", "cloud", "network"],
+        "answer": "local",
+        "multiple": false
+    },
+    {
+        "question": "What is the purpose of the 'terraform workspace select' command?",
+        "options": ["To select an existing workspace", "To apply the configuration", "To destroy the infrastructure", "To initialize the configuration"],
+        "answer": "To select an existing workspace",
+        "multiple": false
+    },
+    {
+        "question": "Which of the following is a valid Terraform provisioner?",
+        "options": ["local-exec", "remote-exec", "file", "shell"],
+        "answer": "local-exec",
+        "multiple": false
+    },
+    {
+        "question": "What is the purpose of the 'terraform workspace delete' command?",
+        "options": ["To delete an existing workspace", "To apply the configuration", "To destroy the infrastructure", "To initialize the configuration"],
+        "answer": "To delete an existing workspace",
+        "multiple": false
+    },
+    {
+        "question": "Which of the following is a valid Terraform resource?",
+        "options": ["aws_instance", "azure_vm", "google_compute", "docker_container"],
+        "answer": "aws_instance",
+        "multiple": false
+    },
+    {
+        "question": "What is the purpose of the 'terraform workspace list' command?",
+        "options": ["To list all existing workspaces", "To apply the configuration", "To destroy the infrastructure", "To initialize the configuration"],
+        "answer": "To list all existing workspaces",
+        "multiple": false
+    },
+    {
+        "question": "Which of the following is a valid Terraform variable type?",
+        "options": ["string", "number", "boolean", "list"],
+        "answer": "string",
+        "multiple": false
+    },
+    {
+        "question": "What is the purpose of the 'terraform fmt' command?",
+        "options": ["To format the configuration files", "To apply the configuration", "To destroy the infrastructure", "To initialize the configuration"],
+        "answer": "To format the configuration files",
+        "multiple": false
+    },
+    {
+        "question": "Which of the following is a valid Terraform module?",
+        "options": ["aws_vpc", "azure_network", "google_vpc", "docker_network"],
+        "answer": "aws_vpc",
+        "multiple": false
+    },
+    {
+        "question": "What is the purpose of the 'terraform state' command?",
+        "options": ["To manage the state file", "To apply the configuration", "To destroy the infrastructure", "To initialize the configuration"],
+        "answer": "To manage the state file",
+        "multiple": false
+    },
+    {
+        "question": "Which of the following is a valid Terraform workspace command?",
+        "options": ["terraform workspace new", "terraform workspace list", "terraform workspace select", "terraform workspace delete"],
+        "answer": "terraform workspace list",
+        "multiple": false
+    },
+    {
+        "question": "What is the purpose of the 'terraform import' command?",
+        "options": ["To import existing resources into the state file", "To apply the configuration", "To destroy the infrastructure", "To initialize the configuration"],
+        "answer": "To import existing resources into the state file",
+        "multiple": false
+    },
+    {
+        "question": "Which of the following is a valid Terraform version constraint?",
+        "options": [">= 0.12.0", "<= 0.12.0", "~> 0.12.0", "^ 0.12.0"],
+        "answer": "~> 0.12.0",
+        "multiple": false
+    },
+    {
+        "question": "What is the purpose of the 'terraform taint' command?",
+        "options": ["To mark a resource for recreation", "To apply the configuration", "To destroy the infrastructure", "To initialize the configuration"],
+        "answer": "To mark a resource for recreation",
+        "multiple": false
+    },
+    {
+        "question": "Which of the following is a valid Terraform function?",
+        "options": ["length", "count", "size", "number"],
+        "answer": "length",
+        "multiple": false
+    },
+    {
+        "question": "What is the purpose of the 'terraform graph' command?",
+        "options": ["To generate a visual representation of the configuration", "To apply the configuration", "To destroy the infrastructure", "To initialize the configuration"],
+        "answer": "To generate a visual representation of the configuration",
+        "multiple": false
+    },
+    {
+        "question": "Which of the following is a valid Terraform security feature?",
+        "options": ["Encryption of state files", "Manual configuration of resources", "Limited cloud provider support", "No version control integration"],
+        "answer": "Encryption of state files",
+        "multiple": false
+    },
+    {
+        "question": "What is the purpose of the 'terraform workspace new' command?",
+        "options": ["To create a new workspace", "To apply the configuration", "To destroy the infrastructure", "To initialize the configuration"],
+        "answer": "To create a new workspace",
+        "multiple": false
+    },
+    {
+        "question": "Which of the following is a valid Terraform backend configuration?",
+        "options": ["local", "remote", "cloud", "network"],
+        "answer": "local",
+        "multiple": false
+    },
+    {
+        "question": "What is the purpose of the 'terraform workspace select' command?",
+        "options": ["To select an existing workspace", "To apply the configuration", "To destroy the infrastructure", "To initialize the configuration"],
+        "answer": "To select an existing workspace",
+        "multiple": false
+    },
+    {
+        "question": "Which of the following is a valid Terraform provisioner?",
+        "options": ["local-exec", "remote-exec", "file", "shell"],
+        "answer": "local-exec",
+        "multiple": false
+    },
+    {
+        "question": "What is the purpose of the 'terraform workspace delete' command?",
+        "options": ["To delete an existing workspace", "To apply the configuration", "To destroy the infrastructure", "To initialize the configuration"],
+        "answer": "To delete an existing workspace",
+        "multiple": false
+    },
+    {
+        "question": "Which of the following is a valid Terraform resource?",
+        "options": ["aws_instance", "azure_vm", "google_compute", "docker_container"],
+        "answer": "aws_instance",
+        "multiple": false
+    },
+    {
+        "question": "What is the purpose of the 'terraform workspace list' command?",
+        "options": ["To list all existing workspaces", "To apply the configuration", "To destroy the infrastructure", "To initialize the configuration"],
+        "answer": "To list all existing workspaces",
+        "multiple": false
+    },
+    {
+        "question": "Which of the following is a valid Terraform variable type?",
+        "options": ["string", "number", "boolean", "list"],
+        "answer": "string",
+        "multiple": false
+    },
+    {
+        "question": "What is the purpose of the 'terraform fmt' command?",
+        "options": ["To format the configuration files", "To apply the configuration", "To destroy the infrastructure", "To initialize the configuration"],
+        "answer": "To format the configuration files",
+        "multiple": false
+    },
+    {
+        "question": "Which of the following is a valid Terraform module?",
+        "options": ["aws_vpc", "azure_network", "google_vpc", "docker_network"],
+        "answer": "aws_vpc",
+        "multiple": false
+    },
+    {
+        "question": "What is the purpose of the 'terraform state' command?",
+        "options": ["To manage the state file", "To apply the configuration", "To destroy the infrastructure", "To initialize the configuration"],
+        "answer": "To manage the state file",
+        "multiple": false
+    },
+    {
+        "question": "Which of the following is a valid Terraform workspace command?",
+        "options": ["terraform workspace new", "terraform workspace list", "terraform workspace select", "terraform workspace delete"],
+        "answer": "terraform workspace list",
+        "multiple": false
+    },
+    {
+        "question": "What is the purpose of the 'terraform import' command?",
+        "options": ["To import existing resources into the state file", "To apply the configuration", "To destroy the infrastructure", "To initialize the configuration"],
+        "answer": "To import existing resources into the state file",
+        "multiple": false
+    },
+    {
+        "question": "Which of the following is a valid Terraform version constraint?",
+        "options": [">= 0.12.0", "<= 0.12.0", "~> 0.12.0", "^ 0.12.0"],
+        "answer": "~> 0.12.0",
+        "multiple": false
+    },
+    {
+        "question": "What is the purpose of the 'terraform taint' command?",
+        "options": ["To mark a resource for recreation", "To apply the configuration", "To destroy the infrastructure", "To initialize the configuration"],
+        "answer": "To mark a resource for recreation",
+        "multiple": false
+    },
+    {
+        "question": "Which of the following is a valid Terraform function?",
+        "options": ["length", "count", "size", "number"],
+        "answer": "length",
+        "multiple": false
+    },
+    {
+        "question": "What is the purpose of the 'terraform graph' command?",
+        "options": ["To generate a visual representation of the configuration", "To apply the configuration", "To destroy the infrastructure", "To initialize the configuration"],
+        "answer": "To generate a visual representation of the configuration",
+        "multiple": false
+    },
+    {
+        "question": "Which of the following is a valid Terraform security feature?",
+        "options": ["Encryption of state files", "Manual configuration of resources", "Limited cloud provider support", "No version control integration"],
+        "answer": "Encryption of state files",
+        "multiple": false
+    },
+    {
+        "question": "What is the purpose of the 'terraform workspace new' command?",
+        "options": ["To create a new workspace", "To apply the configuration", "To destroy the infrastructure", "To initialize the configuration"],
+        "answer": "To create a new workspace",
+        "multiple": false
+    },
+    {
+        "question": "Which of the following is a valid Terraform backend configuration?",
+        "options": ["local", "remote", "cloud", "network"],
+        "answer": "local",
+        "multiple": false
+    },
+    {
+        "question": "What is the purpose of the 'terraform workspace select' command?",
+        "options": ["To select an existing workspace", "To apply the configuration", "To destroy the infrastructure", "To initialize the configuration"],
+        "answer": "To select an existing workspace",
+        "multiple": false
+    },
+    {
+        "question": "Which of the following is a valid Terraform provisioner?",
+        "options": ["local-exec", "remote-exec", "file", "shell"],
+        "answer": "local-exec",
+        "multiple": false
+    },
+    {
+        "question": "What is the purpose of the 'terraform workspace delete' command?",
+        "options": ["To delete an existing workspace", "To apply the configuration", "To destroy the infrastructure", "To initialize the configuration"],
+        "answer": "To delete an existing workspace",
+        "multiple": false
+    },
+    {
+        "question": "Which of the following is a valid Terraform resource?",
+        "options": ["aws_instance", "azure_vm", "google_compute", "docker_container"],
+        "answer": "aws_instance",
+        "multiple": false
+    },
+    {
+        "question": "What is the purpose of the 'terraform workspace list' command?",
+        "options": ["To list all existing workspaces", "To apply the configuration", "To destroy the infrastructure", "To initialize the configuration"],
+        "answer": "To list all existing workspaces",
+        "multiple": false
+    },
+    {
+        "question": "Which of the following is a valid Terraform variable type?",
+        "options": ["string", "number", "boolean", "list"],
+        "answer": "string",
+        "multiple": false
+    },
+    {
+        "question": "What is the purpose of the 'terraform fmt' command?",
+        "options": ["To format the configuration files", "To apply the configuration", "To destroy the infrastructure", "To initialize the configuration"],
+        "answer": "To format the configuration files",
+        "multiple": false
+    },
+    {
+        "question": "Which of the following is a valid Terraform module?",
+        "options": ["aws_vpc", "azure_network", "google_vpc", "docker_network"],
+        "answer": "aws_vpc",
+        "multiple": false
+    },
+    {
+        "question": "What is the purpose of the 'terraform state' command?",
+        "options": ["To manage the state file", "To apply the configuration", "To destroy the infrastructure", "To initialize the configuration"],
+        "answer": "To manage the state file",
+        "multiple": false
+    },
+    {
+        "question": "Which of the following is a valid Terraform workspace command?",
+        "options": ["terraform workspace new", "terraform workspace list", "terraform workspace select", "terraform workspace delete"],
+        "answer": "terraform workspace list",
+        "multiple": false
+    },
+    {
+        "question": "What is the purpose of the 'terraform import' command?",
+        "options": ["To import existing resources into the state file", "To apply the configuration", "To destroy the infrastructure", "To initialize the configuration"],
+        "answer": "To import existing resources into the state file",
+        "multiple": false
+    },
+    {
+        "question": "Which of the following is a valid Terraform version constraint?",
+        "options": [">= 0.12.0", "<= 0.12.0", "~> 0.12.0", "^ 0.12.0"],
+        "answer": "~> 0.12.0",
+        "multiple": false
+    },
+    {
+        "question": "What is the purpose of the 'terraform taint' command?",
+        "options": ["To mark a resource for recreation", "To apply the configuration", "To destroy the infrastructure", "To initialize the configuration"],
+        "answer": "To mark a resource for recreation",
+        "multiple": false
+    },
+    {
+        "question": "Which of the following is a valid Terraform function?",
+        "options": ["length", "count", "size", "number"],
+        "answer": "length",
+        "multiple": false
+    },
+    {
+        "question": "What is the purpose of the 'terraform graph' command?",
+        "options": ["To generate a visual representation of the configuration", "To apply the configuration", "To destroy the infrastructure", "To initialize the configuration"],
+        "answer": "To generate a visual representation of the configuration",
+        "multiple": false
+    },
+    {
+        "question": "Which of the following is a valid Terraform security feature?",
+        "options": ["Encryption of state files", "Manual configuration of resources", "Limited cloud provider support", "No version control integration"],
+        "answer": "Encryption of state files",
+        "multiple": false
+    },
+    {
+        "question": "What is the purpose of the 'terraform workspace new' command?",
+        "options": ["To create a new workspace", "To apply the configuration", "To destroy the infrastructure", "To initialize the configuration"],
+        "answer": "To create a new workspace",
+        "multiple": false
+    },
+    {
+        "question": "Which of the following is a valid Terraform backend configuration?",
+        "options": ["local", "remote", "cloud", "network"],
+        "answer": "local",
+        "multiple": false
+    },
+    {
+        "question": "What is the purpose of the 'terraform workspace select' command?",
+        "options": ["To select an existing workspace", "To apply the configuration", "To destroy the infrastructure", "To initialize the configuration"],
+        "answer": "To select an existing workspace",
+        "multiple": false
+    },
+    {
+        "question": "Which of the following is a valid Terraform provisioner?",
+        "options": ["local-exec", "remote-exec", "file", "shell"],
+        "answer": "local-exec",
+        "multiple": false
+    },
+    {
+        "question": "What is the purpose of the 'terraform workspace delete' command?",
+        "options": ["To delete an existing workspace", "To apply the configuration", "To destroy the infrastructure", "To initialize the configuration"],
+        "answer": "To delete an existing workspace",
+        "multiple": false
+    },
+    {
+        "question": "Which of the following is a valid Terraform resource?",
+        "options": ["aws_instance", "azure_vm", "google_compute", "docker_container"],
+        "answer": "aws_instance",
+        "multiple": false
+    },
+    {
+        "question": "What is the purpose of the 'terraform workspace list' command?",
+        "options": ["To list all existing workspaces", "To apply the configuration", "To destroy the infrastructure", "To initialize the configuration"],
+        "answer": "To list all existing workspaces",
+        "multiple": false
+    },
+    {
+        "question": "Which of the following is a valid Terraform variable type?",
+        "options": ["string", "number", "boolean", "list"],
+        "answer": "string",
+        "multiple": false
+    },
+    {
+        "question": "What is the purpose of the 'terraform fmt' command?",
+        "options": ["To format the configuration files", "To apply the configuration", "To destroy the infrastructure", "To initialize the configuration"],
+        "answer": "To format the configuration files",
+        "multiple": false
+    },
+    {
+        "question": "Which of the following is a valid Terraform module?",
+        "options": ["aws_vpc", "azure_network", "google_vpc", "docker_network"],
+        "answer": "aws_vpc",
+        "multiple": false
+    },
+    {
+        "question": "What is the purpose of the 'terraform state' command?",
+        "options": ["To manage the state file", "To apply the configuration", "To destroy the infrastructure", "To initialize the configuration"],
+        "answer": "To manage the state file",
+        "multiple": false
+    },
+    {
+        "question": "Which of the following is a valid Terraform workspace command?",
+        "options": ["terraform workspace new", "terraform workspace list", "terraform workspace select", "terraform workspace delete"],
+        "answer": "terraform workspace list",
+        "multiple": false
+    },
+    {
+        "question": "What is the purpose of the 'terraform import' command?",
+        "options": ["To import existing resources into the state file", "To apply the configuration", "To destroy the infrastructure", "To initialize the configuration"],
+        "answer": "To import existing resources into the state file",
+        "multiple": false
+    },
+    {
+        "question": "Which of the following is a valid Terraform version constraint?",
+        "options": [">= 0.12.0", "<= 0.12.0", "~> 0.12.0", "^ 0.12.0"],
+        "answer": "~> 0.12.0",
+        "multiple": false
+    },
+    {
+        "question": "What is the purpose of the 'terraform taint' command?",
+        "options": ["To mark a resource for recreation", "To apply the configuration", "To destroy the infrastructure", "To initialize the configuration"],
+        "answer": "To mark a resource for recreation",
+        "multiple": false
+    },
+    {
+        "question": "Which of the following is a valid Terraform function?",
+        "options": ["length", "count", "size", "number"],
+        "answer": "length",
+        "multiple": false
+    },
+    {
+        "question": "What is the purpose of the 'terraform graph' command?",
+        "options": ["To generate a visual representation of the configuration", "To apply the configuration", "To destroy the infrastructure", "To initialize the configuration"],
+        "answer": "To generate a visual representation of the configuration",
+        "multiple": false
+    },
+    {
+        "question": "Which of the following is a valid Terraform security feature?",
+        "options": ["Encryption of state files", "Manual configuration of resources", "Limited cloud provider support", "No version control integration"],
+        "answer": "Encryption of state files",
+        "multiple": false
+    },
+    {
+        "question": "What is the purpose of the 'terraform workspace new' command?",
+        "options": ["To create a new workspace", "To apply the configuration", "To destroy the infrastructure", "To initialize the configuration"],
+        "answer": "To create a new workspace",
+        "multiple": false
+    },
+    {
+        "question": "Which of the following is a valid Terraform backend configuration?",
+        "options": ["local", "remote", "cloud", "network"],
+        "answer": "local",
+        "multiple": false
+    },
+    {
+        "question": "What is the purpose of the 'terraform workspace select' command?",
+        "options": ["To select an existing workspace", "To apply the configuration", "To destroy the infrastructure", "To initialize the configuration"],
+        "answer": "To select an existing workspace",
+        "multiple": false
+    },
+    {
+        "question": "Which of the following is a valid Terraform provisioner?",
+        "options": ["local-exec", "remote-exec", "file", "shell"],
+        "answer": "local-exec",
+        "multiple": false
+    },
+    {
+        "question": "What is the purpose of the 'terraform workspace delete' command?",
+        "options": ["To delete an existing workspace", "To apply the configuration", "To destroy the infrastructure", "To initialize the configuration"],
+        "answer": "To delete an existing workspace",
+        "multiple": false
+    },
+    {
+        "question": "Which of the following is a valid Terraform resource?",
+        "options": ["aws_instance", "azure_vm", "google_compute", "docker_container"],
+        "answer": "aws_instance",
+        "multiple": false
+    },
+    {
+        "question": "What is the purpose of the 'terraform workspace list' command?",
+        "options": ["To list all existing workspaces", "To apply the configuration", "To destroy the infrastructure", "To initialize the configuration"],
+        "answer": "To list all existing workspaces",
+        "multiple": false
+    },
+    {
+        "question": "Which of the following is a valid Terraform variable type?",
+        "options": ["string", "number", "boolean", "list"],
+        "answer": "string",
+        "multiple": false
+    },
+    {
+        "question": "What is the purpose of the 'terraform fmt' command?",
+        "options": ["To format the configuration files", "To apply the configuration", "To destroy the infrastructure", "To initialize the configuration"],
+        "answer": "To format the configuration files",
+        "multiple": false
+    },
+    {
+        "question": "Which of the following is a valid Terraform module?",
+        "options": ["aws_vpc", "azure_network", "google_vpc", "docker_network"],
+        "answer": "aws_vpc",
+        "multiple": false
+    },
+    {
+        "question": "What is the purpose of the 'terraform state' command?",
+        "options": ["To manage the state file", "To apply the configuration", "To destroy the infrastructure", "To initialize the configuration"],
+        "answer": "To manage the state file",
+        "multiple": false
+    },
+    {
+        "question": "Which of the following is a valid Terraform workspace command?",
+        "options": ["terraform workspace new", "terraform workspace list", "terraform workspace select", "terraform workspace delete"],
+        "answer": "terraform workspace list",
+        "multiple": false
+    },
+    {
+        "question": "What is the purpose of the 'terraform import' command?",
+        "options": ["To import existing resources into the state file", "To apply the configuration", "To destroy the infrastructure", "To initialize the configuration"],
+        "answer": "To import existing resources into the state file",
+        "multiple": false
+    },
+    {
+        "question": "Which of the following is a valid Terraform version constraint?",
+        "options": [">= 0.12.0", "<= 0.12.0", "~> 0.12.0", "^ 0.12.0"],
+        "answer": "~> 0.12.0",
+        "multiple": false
+    },
+    {
+        "question": "What is the purpose of the 'terraform taint' command?",
+        "options": ["To mark a resource for recreation", "To apply the configuration", "To destroy the infrastructure", "To initialize the configuration"],
+        "answer": "To mark a resource for recreation",
+        "multiple": false
+    },
+    {
+        "question": "Which of the following is a valid Terraform function?",
+        "options": ["length", "count", "size", "number"],
+        "answer": "length",
+        "multiple": false
+    },
+    {
+        "question": "What is the purpose of the 'terraform graph' command?",
+        "options": ["To generate a visual representation of the configuration", "To apply the configuration", "To destroy the infrastructure", "To initialize the configuration"],
+        "answer": "To generate a visual representation of the configuration",
+        "multiple": false
+    },
+    {
+        "question": "Which of the following is a valid Terraform security feature?",
+        "options": ["Encryption of state files", "Manual configuration of resources", "Limited cloud provider support", "No version control integration"],
+        "answer": "Encryption of state files",
+        "multiple": false
+    },
+    {
+        "question": "What is the purpose of the 'terraform workspace new' command?",
+        "options": ["To create a new workspace", "To apply the configuration", "To destroy the infrastructure", "To initialize the configuration"],
+        "answer": "To create a new workspace",
+        "multiple": false
+    },
+    {
+        "question": "Which of the following is a valid Terraform backend configuration?",
+        "options": ["local", "remote", "cloud", "network"],
+        "answer": "local",
+        "multiple": false
+    },
+    {
+        "question": "What is the purpose of the 'terraform workspace select' command?",
+        "options": ["To select an existing workspace", "To apply the configuration", "To destroy the infrastructure", "To initialize the configuration"],
+        "answer": "To select an existing workspace",
+        "multiple": false
+    },
+    {
+        "question": "Which of the following is a valid Terraform provisioner?",
+        "options": ["local-exec", "remote-exec", "file", "shell"],
+        "answer": "local-exec",
+        "multiple": false
+    },
+    {
+        "question": "What is the purpose of the 'terraform workspace delete' command?",
+        "options": ["To delete an existing workspace", "To apply the configuration", "To destroy the infrastructure", "To initialize the configuration"],
+        "answer": "To delete an existing workspace",
+        "multiple": false
+    },
+    {
+        "question": "Which of the following is a valid Terraform resource?",
+        "options": ["aws_instance", "azure_vm", "google_compute", "docker_container"],
+        "answer": "aws_instance",
+        "multiple": false
+    },
+    {
+        "question": "What is the purpose of the 'terraform workspace list' command?",
+        "options": ["To list all existing workspaces", "To apply the configuration", "To destroy the infrastructure", "To initialize the configuration"],
+        "answer": "To list all existing workspaces",
+        "multiple": false
+    },
+    {
+        "question": "Which of the following is a valid Terraform variable type?",
+        "options": ["string", "number", "boolean", "list"],
+        "answer": "string",
+        "multiple": false
+    },
+    {
+        "question": "What is the purpose of the 'terraform fmt' command?",
+        "options": ["To format the configuration files", "To apply the configuration", "To destroy the infrastructure", "To initialize the configuration"],
+        "answer": "To format the configuration files",
+        "multiple": false
+    },
+    {
+        "question": "Which of the following is a valid Terraform module?",
+        "options": ["aws_vpc", "azure_network", "google_vpc", "docker_network"],
+        "answer": "aws_vpc",
+        "multiple": false
+    },
+    {
+        "question": "What is the purpose of the 'terraform state' command?",
+        "options": ["To manage the state file", "To apply the configuration", "To destroy the infrastructure", "To initialize the configuration"],
+        "answer": "To manage the state file",
+        "multiple": false
+    },
+    {
+        "question": "Which of the following is a valid Terraform workspace command?",
+        "options": ["terraform workspace new", "terraform workspace list", "terraform workspace select", "terraform workspace delete"],
+        "answer": "terraform workspace list",
+        "multiple": false
+    },
+    {
+        "question": "What is the purpose of the 'terraform import' command?",
+        "options": ["To import existing resources into the state file", "To apply the configuration", "To destroy the infrastructure", "To initialize the configuration"],
+        "answer": "To import existing resources into the state file",
+        "multiple": false
+    },
+    {
+        "question": "Which of the following is a valid Terraform version constraint?",
+        "options": [">= 0.12.0", "<= 0.12.0", "~> 0.12.0", "^ 0.12.0"],
+        "answer": "~> 0.12.0",
+        "multiple": false
+    },
+    {
+        "question": "What is the purpose of the 'terraform taint' command?",
+        "options": ["To mark a resource for recreation", "To apply the configuration", "To destroy the infrastructure", "To initialize the configuration"],
+        "answer": "To mark a resource for recreation",
+        "multiple": false
+    },
+    {
+        "question": "Which of the following is a valid Terraform function?",
+        "options": ["length", "count", "size", "number"],
+        "answer": "length",
+        "multiple": false
+    },
+    {
+        "question": "What is the purpose of the 'terraform graph' command?",
+        "options": ["To generate a visual representation of the configuration", "To apply the configuration", "To destroy the infrastructure", "To initialize the configuration"],
+        "answer": "To generate a visual representation of the configuration",
+        "multiple": false
+    },
+    {
+        "question": "Which of the following is a valid Terraform security feature?",
+        "options": ["Encryption of state files", "Manual configuration of resources", "Limited cloud provider support", "No version control integration"],
+        "answer": "Encryption of state files",
+        "multiple": false
+    },
+    {
+        "question": "What is the purpose of the 'terraform workspace new' command?",
+        "options": ["To create a new workspace", "To apply the configuration", "To destroy the infrastructure", "To initialize the configuration"],
+        "answer": "To create a new workspace",
+        "multiple": false
+    },
+    {
+        "question": "Which of the following is a valid Terraform backend configuration?",
+        "options": ["local", "remote", "cloud", "network"],
+        "answer": "local",
+        "multiple": false
+    },
+    {
+        "question": "What is the purpose of the 'terraform workspace select' command?",
+        "options": ["To select an existing workspace", "To apply the configuration", "To destroy the infrastructure", "To initialize the configuration"],
+        "answer": "To select an existing workspace",
+        "multiple": false
+    },
+    {
+        "question": "Which of the following is a valid Terraform provisioner?",
+        "options": ["local-exec", "remote-exec", "file", "shell"],
+        "answer": "local-exec",
+        "multiple": false
+    },
+    {
+        "question": "What is the purpose of the 'terraform workspace delete' command?",
+        "options": ["To delete an existing workspace", "To apply the configuration", "To destroy the infrastructure", "To initialize the configuration"],
+        "answer": "To delete an existing workspace",
+        "multiple": false
+    },
+    {
+        "question": "Which of the following is a valid Terraform resource?",
+        "options": ["aws_instance", "azure_vm", "google_compute", "docker_container"],
+        "answer": "aws_instance",
+        "multiple": false
+    },
+    {
+        "question": "What is the purpose of the 'terraform workspace list' command?",
+        "options": ["To list all existing workspaces", "To apply the configuration", "To destroy the infrastructure", "To initialize the configuration"],
+        "answer": "To list all existing workspaces",
+        "multiple": false
+    },
+    {
+        "question": "Which of the following is a valid Terraform variable type?",
+        "options": ["string", "number", "boolean", "list"],
+        "answer": "string",
+        "multiple": false
+    },
+    {
+        "question": "What is the purpose of the 'terraform fmt' command?",
+        "options": ["To format the configuration files", "To apply the configuration", "To destroy the infrastructure", "To initialize the configuration"],
+        "answer": "To format the configuration files",
+        "multiple": false
+    },
+    {
+        "question": "Which of the following is a valid Terraform module?",
+        "options": ["aws_vpc", "azure_network", "google_vpc", "docker_network"],
+        "answer": "aws_vpc",
+        "multiple": false
+    },
+    {
+        "question": "What is the purpose of the 'terraform state' command?",
+        "options": ["To manage the state file", "To apply the configuration", "To destroy the infrastructure", "To initialize the configuration"],
+        "answer": "To manage the state file",
+        "multiple": false
+    },
+    {
+        "question": "Which of the following is a valid Terraform workspace command?",
+        "options": ["terraform workspace new", "terraform workspace list", "terraform workspace select", "terraform workspace delete"],
+        "answer": "terraform workspace list",
+        "multiple": false
+    },
+    {
+        "question": "What is the purpose of the 'terraform import' command?",
+        "options": ["To import existing resources into the state file", "To apply the configuration", "To destroy the infrastructure", "To initialize the configuration"],
+        "answer": "To import existing resources into the state file",
+        "multiple": false
+    },
+    {
+        "question": "Which of the following is a valid Terraform version constraint?",
+        "options": [">= 0.12.0", "<= 0.12.0", "~> 0.12.0", "^ 0.12.0"],
+        "answer": "~> 0.12.0",
+        "multiple": false
+    },
+    {
+        "question": "What is the purpose of the 'terraform taint' command?",
+        "options": ["To mark a resource for recreation", "To apply the configuration", "To destroy the infrastructure", "To initialize the configuration"],
+        "answer": "To mark a resource for recreation",
+        "multiple": false
+    },
+    {
+        "question": "Which of the following is a valid Terraform function?",
+        "options": ["length", "count", "size", "number"],
+        "answer": "length",
+        "multiple": false
+    },
+    {
+        "question": "What is the purpose of the 'terraform graph' command?",
+        "options": ["To generate a visual representation of the configuration", "To apply the configuration", "To destroy the infrastructure", "To initialize the configuration"],
+        "answer": "To generate a visual representation of the configuration",
+        "multiple": false
+    },
+    {
+        "question": "Which of the following is a valid Terraform security feature?",
+        "options": ["Encryption of state files", "Manual configuration of resources", "Limited cloud provider support", "No version control integration"],
+        "answer": "Encryption of state files",
+        "multiple": false
+    },
+    {
+        "question": "What is the purpose of the 'terraform workspace new' command?",
+        "options": ["To create a new workspace", "To apply the configuration", "To destroy the infrastructure", "To initialize the configuration"],
+        "answer": "To create a new workspace",
+        "multiple": false
+    },
+    {
+        "question": "Which of the following is a valid Terraform backend configuration?",
+        "options": ["local", "remote", "cloud", "network"],
+        "answer": "local",
+        "multiple": false
+    },
+    {
+        "question": "What is the purpose of the 'terraform workspace select' command?",
+        "options": ["To select an existing workspace", "To apply the configuration", "To destroy the infrastructure", "To initialize the configuration"],
+        "answer": "To select an existing workspace",
+        "multiple": false
+    },
+    {
+        "question": "Which of the following is a valid Terraform provisioner?",
+        "options": ["local-exec", "remote-exec", "file", "shell"],
+        "answer": "local-exec",
+        "multiple": false
+    },
+    {
+        "question": "What is the purpose of the 'terraform workspace delete' command?",
+        "options": ["To delete an existing workspace", "To apply the configuration", "To destroy the infrastructure", "To initialize the configuration"],
+        "answer": "To delete an existing workspace",
+        "multiple": false
+    },
+    {
+        "question": "Which of the following is a valid Terraform resource?",
+        "options": ["aws_instance", "azure_vm", "google_compute", "docker_container"],
+        "answer": "aws_instance",
+        "multiple": false
+    },
+    {
+        "question": "What is the purpose of the 'terraform workspace list' command?",
+        "options": ["To list all existing workspaces", "To apply the configuration", "To destroy the infrastructure", "To initialize the configuration"],
+        "answer": "To list all existing workspaces",
+        "multiple": false
+    },
+    {
+        "question": "Which of the following is a valid Terraform variable type?",
+        "options": ["string", "number", "boolean", "list"],
+        "answer": "string",
+        "multiple": false
+    }
+]

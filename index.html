@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mock Exam</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <div id="app" class="card p-4">
+            <h1 class="text-center">Mock Exam</h1>
+            <div id="score" class="text-center mb-3"></div>
+            <input type="file" id="fileInput" class="form-control mb-3" accept=".json">
+            <div id="questions"></div>
+            <button class="btn btn-primary mt-3" onclick="submitExam()">Submit</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

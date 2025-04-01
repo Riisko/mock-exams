@@ -66,81 +66,9 @@
         "multiple": true
     },
     {
-        "question": "Which of the following are valid Terraform commands for managing state?",
-        "options": ["terraform state list", "terraform state show", "terraform state rm", "terraform state mv"],
-        "answer": ["terraform state list", "terraform state show", "terraform state rm", "terraform state mv"],
-        "multiple": true
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for formatting configuration files?",
-        "options": ["terraform fmt", "terraform format", "terraform beautify", "terraform tidy"],
-        "answer": ["terraform fmt"],
-        "multiple": false
-    },
-    {
         "question": "Which of the following are valid Terraform commands for initializing a configuration?",
         "options": ["terraform init", "terraform start", "terraform setup", "terraform configure"],
         "answer": ["terraform init"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for applying a configuration?",
-        "options": ["terraform apply", "terraform execute", "terraform run", "terraform deploy"],
-        "answer": ["terraform apply"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for destroying infrastructure?",
-        "options": ["terraform destroy", "terraform remove", "terraform delete", "terraform teardown"],
-        "answer": ["terraform destroy"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for validating configuration files?",
-        "options": ["terraform validate", "terraform check", "terraform verify", "terraform inspect"],
-        "answer": ["terraform validate"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for importing existing resources?",
-        "options": ["terraform import", "terraform add", "terraform include", "terraform integrate"],
-        "answer": ["terraform import"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for generating a visual representation of the configuration?",
-        "options": ["terraform graph", "terraform visualize", "terraform diagram", "terraform map"],
-        "answer": ["terraform graph"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for marking a resource for recreation?",
-        "options": ["terraform taint", "terraform mark", "terraform flag", "terraform recreate"],
-        "answer": ["terraform taint"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for listing all existing workspaces?",
-        "options": ["terraform workspace list", "terraform workspace show", "terraform workspace display", "terraform workspace enumerate"],
-        "answer": ["terraform workspace list"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for selecting an existing workspace?",
-        "options": ["terraform workspace select", "terraform workspace choose", "terraform workspace pick", "terraform workspace switch"],
-        "answer": ["terraform workspace select"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for deleting an existing workspace?",
-        "options": ["terraform workspace delete", "terraform workspace remove", "terraform workspace discard", "terraform workspace erase"],
-        "answer": ["terraform workspace delete"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for creating a new workspace?",
-        "options": ["terraform workspace new", "terraform workspace create", "terraform workspace add", "terraform workspace initialize"],
-        "answer": ["terraform workspace new"],
         "multiple": false
     },
     {
@@ -153,246 +81,6 @@
         "question": "Which of the following are valid Terraform commands for formatting configuration files?",
         "options": ["terraform fmt", "terraform format", "terraform beautify", "terraform tidy"],
         "answer": ["terraform fmt"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for initializing a configuration?",
-        "options": ["terraform init", "terraform start", "terraform setup", "terraform configure"],
-        "answer": ["terraform init"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for applying a configuration?",
-        "options": ["terraform apply", "terraform execute", "terraform run", "terraform deploy"],
-        "answer": ["terraform apply"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for destroying infrastructure?",
-        "options": ["terraform destroy", "terraform remove", "terraform delete", "terraform teardown"],
-        "answer": ["terraform destroy"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for validating configuration files?",
-        "options": ["terraform validate", "terraform check", "terraform verify", "terraform inspect"],
-        "answer": ["terraform validate"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for importing existing resources?",
-        "options": ["terraform import", "terraform add", "terraform include", "terraform integrate"],
-        "answer": ["terraform import"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for generating a visual representation of the configuration?",
-        "options": ["terraform graph", "terraform visualize", "terraform diagram", "terraform map"],
-        "answer": ["terraform graph"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for marking a resource for recreation?",
-        "options": ["terraform taint", "terraform mark", "terraform flag", "terraform recreate"],
-        "answer": ["terraform taint"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for listing all existing workspaces?",
-        "options": ["terraform workspace list", "terraform workspace show", "terraform workspace display", "terraform workspace enumerate"],
-        "answer": ["terraform workspace list"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for selecting an existing workspace?",
-        "options": ["terraform workspace select", "terraform workspace choose", "terraform workspace pick", "terraform workspace switch"],
-        "answer": ["terraform workspace select"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for deleting an existing workspace?",
-        "options": ["terraform workspace delete", "terraform workspace remove", "terraform workspace discard", "terraform workspace erase"],
-        "answer": ["terraform workspace delete"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for creating a new workspace?",
-        "options": ["terraform workspace new", "terraform workspace create", "terraform workspace add", "terraform workspace initialize"],
-        "answer": ["terraform workspace new"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for managing state?",
-        "options": ["terraform state list", "terraform state show", "terraform state rm", "terraform state mv"],
-        "answer": ["terraform state list", "terraform state show", "terraform state rm", "terraform state mv"],
-        "multiple": true
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for formatting configuration files?",
-        "options": ["terraform fmt", "terraform format", "terraform beautify", "terraform tidy"],
-        "answer": ["terraform fmt"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for initializing a configuration?",
-        "options": ["terraform init", "terraform start", "terraform setup", "terraform configure"],
-        "answer": ["terraform init"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for applying a configuration?",
-        "options": ["terraform apply", "terraform execute", "terraform run", "terraform deploy"],
-        "answer": ["terraform apply"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for destroying infrastructure?",
-        "options": ["terraform destroy", "terraform remove", "terraform delete", "terraform teardown"],
-        "answer": ["terraform destroy"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for validating configuration files?",
-        "options": ["terraform validate", "terraform check", "terraform verify", "terraform inspect"],
-        "answer": ["terraform validate"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for importing existing resources?",
-        "options": ["terraform import", "terraform add", "terraform include", "terraform integrate"],
-        "answer": ["terraform import"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for generating a visual representation of the configuration?",
-        "options": ["terraform graph", "terraform visualize", "terraform diagram", "terraform map"],
-        "answer": ["terraform graph"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for marking a resource for recreation?",
-        "options": ["terraform taint", "terraform mark", "terraform flag", "terraform recreate"],
-        "answer": ["terraform taint"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for listing all existing workspaces?",
-        "options": ["terraform workspace list", "terraform workspace show", "terraform workspace display", "terraform workspace enumerate"],
-        "answer": ["terraform workspace list"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for selecting an existing workspace?",
-        "options": ["terraform workspace select", "terraform workspace choose", "terraform workspace pick", "terraform workspace switch"],
-        "answer": ["terraform workspace select"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for deleting an existing workspace?",
-        "options": ["terraform workspace delete", "terraform workspace remove", "terraform workspace discard", "terraform workspace erase"],
-        "answer": ["terraform workspace delete"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for creating a new workspace?",
-        "options": ["terraform workspace new", "terraform workspace create", "terraform workspace add", "terraform workspace initialize"],
-        "answer": ["terraform workspace new"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for managing state?",
-        "options": ["terraform state list", "terraform state show", "terraform state rm", "terraform state mv"],
-        "answer": ["terraform state list", "terraform state show", "terraform state rm", "terraform state mv"],
-        "multiple": true
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for formatting configuration files?",
-        "options": ["terraform fmt", "terraform format", "terraform beautify", "terraform tidy"],
-        "answer": ["terraform fmt"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for initializing a configuration?",
-        "options": ["terraform init", "terraform start", "terraform setup", "terraform configure"],
-        "answer": ["terraform init"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for applying a configuration?",
-        "options": ["terraform apply", "terraform execute", "terraform run", "terraform deploy"],
-        "answer": ["terraform apply"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for destroying infrastructure?",
-        "options": ["terraform destroy", "terraform remove", "terraform delete", "terraform teardown"],
-        "answer": ["terraform destroy"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for validating configuration files?",
-        "options": ["terraform validate", "terraform check", "terraform verify", "terraform inspect"],
-        "answer": ["terraform validate"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for importing existing resources?",
-        "options": ["terraform import", "terraform add", "terraform include", "terraform integrate"],
-        "answer": ["terraform import"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for generating a visual representation of the configuration?",
-        "options": ["terraform graph", "terraform visualize", "terraform diagram", "terraform map"],
-        "answer": ["terraform graph"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for marking a resource for recreation?",
-        "options": ["terraform taint", "terraform mark", "terraform flag", "terraform recreate"],
-        "answer": ["terraform taint"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for listing all existing workspaces?",
-        "options": ["terraform workspace list", "terraform workspace show", "terraform workspace display", "terraform workspace enumerate"],
-        "answer": ["terraform workspace list"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for selecting an existing workspace?",
-        "options": ["terraform workspace select", "terraform workspace choose", "terraform workspace pick", "terraform workspace switch"],
-        "answer": ["terraform workspace select"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for deleting an existing workspace?",
-        "options": ["terraform workspace delete", "terraform workspace remove", "terraform workspace discard", "terraform workspace erase"],
-        "answer": ["terraform workspace delete"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for creating a new workspace?",
-        "options": ["terraform workspace new", "terraform workspace create", "terraform workspace add", "terraform workspace initialize"],
-        "answer": ["terraform workspace new"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for managing state?",
-        "options": ["terraform state list", "terraform state show", "terraform state rm", "terraform state mv"],
-        "answer": ["terraform state list", "terraform state show", "terraform state rm", "terraform state mv"],
-        "multiple": true
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for formatting configuration files?",
-        "options": ["terraform fmt", "terraform format", "terraform beautify", "terraform tidy"],
-        "answer": ["terraform fmt"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for initializing a configuration?",
-        "options": ["terraform init", "terraform start", "terraform setup", "terraform configure"],
-        "answer": ["terraform init"],
         "multiple": false
     },
      {
@@ -402,45 +90,9 @@
         "multiple": false
     },
     {
-        "question": "Which of the following are valid Terraform commands for destroying infrastructure?",
-        "options": ["terraform destroy", "terraform remove", "terraform delete", "terraform teardown"],
-        "answer": ["terraform destroy"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for validating configuration files?",
-        "options": ["terraform validate", "terraform check", "terraform verify", "terraform inspect"],
-        "answer": ["terraform validate"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for importing existing resources?",
-        "options": ["terraform import", "terraform add", "terraform include", "terraform integrate"],
-        "answer": ["terraform import"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for generating a visual representation of the configuration?",
-        "options": ["terraform graph", "terraform visualize", "terraform diagram", "terraform map"],
-        "answer": ["terraform graph"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for marking a resource for recreation?",
-        "options": ["terraform taint", "terraform mark", "terraform flag", "terraform recreate"],
-        "answer": ["terraform taint"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for listing all existing workspaces?",
-        "options": ["terraform workspace list", "terraform workspace show", "terraform workspace display", "terraform workspace enumerate"],
-        "answer": ["terraform workspace list"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for selecting an existing workspace?",
-        "options": ["terraform workspace select", "terraform workspace choose", "terraform workspace pick", "terraform workspace switch"],
-        "answer": ["terraform workspace select"],
+        "question": "Which of the following are valid Terraform commands for creating a new workspace?",
+        "options": ["terraform workspace new", "terraform workspace create", "terraform workspace add", "terraform workspace initialize"],
+        "answer": ["terraform workspace new"],
         "multiple": false
     },
     {
@@ -450,27 +102,45 @@
         "multiple": false
     },
     {
-        "question": "Which of the following are valid Terraform commands for creating a new workspace?",
-        "options": ["terraform workspace new", "terraform workspace create", "terraform workspace add", "terraform workspace initialize"],
-        "answer": ["terraform workspace new"],
+        "question": "Which of the following are valid Terraform commands for selecting an existing workspace?",
+        "options": ["terraform workspace select", "terraform workspace choose", "terraform workspace pick", "terraform workspace switch"],
+        "answer": ["terraform workspace select"],
         "multiple": false
     },
     {
-        "question": "Which of the following are valid Terraform commands for managing state?",
-        "options": ["terraform state list", "terraform state show", "terraform state rm", "terraform state mv"],
-        "answer": ["terraform state list", "terraform state show", "terraform state rm", "terraform state mv"],
-        "multiple": true
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for formatting configuration files?",
-        "options": ["terraform fmt", "terraform format", "terraform beautify", "terraform tidy"],
-        "answer": ["terraform fmt"],
+        "question": "Which of the following are valid Terraform commands for listing all existing workspaces?",
+        "options": ["terraform workspace list", "terraform workspace show", "terraform workspace display", "terraform workspace enumerate"],
+        "answer": ["terraform workspace list"],
         "multiple": false
     },
     {
-        "question": "Which of the following are valid Terraform commands for initializing a configuration?",
-        "options": ["terraform init", "terraform start", "terraform setup", "terraform configure"],
-        "answer": ["terraform init"],
+        "question": "Which of the following are valid Terraform commands for marking a resource for recreation?",
+        "options": ["terraform taint", "terraform mark", "terraform flag", "terraform recreate"],
+        "answer": ["terraform taint"],
+        "multiple": false
+    },
+    {
+        "question": "Which of the following are valid Terraform commands for generating a visual representation of the configuration?",
+        "options": ["terraform graph", "terraform visualize", "terraform diagram", "terraform map"],
+        "answer": ["terraform graph"],
+        "multiple": false
+    },
+    {
+        "question": "Which of the following are valid Terraform commands for importing existing resources?",
+        "options": ["terraform import", "terraform add", "terraform include", "terraform integrate"],
+        "answer": ["terraform import"],
+        "multiple": false
+    },
+    {
+        "question": "Which of the following are valid Terraform commands for validating configuration files?",
+        "options": ["terraform validate", "terraform check", "terraform verify", "terraform inspect"],
+        "answer": ["terraform validate"],
+        "multiple": false
+    },
+    {
+        "question": "Which of the following are valid Terraform commands for destroying infrastructure?",
+        "options": ["terraform destroy", "terraform remove", "terraform delete", "terraform teardown"],
+        "answer": ["terraform destroy"],
         "multiple": false
     },
     {
@@ -480,909 +150,249 @@
         "multiple": false
     },
     {
-        "question": "Which of the following are valid Terraform commands for destroying infrastructure?",
-        "options": ["terraform destroy", "terraform remove", "terraform delete", "terraform teardown"],
-        "answer": ["terraform destroy"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for validating configuration files?",
-        "options": ["terraform validate", "terraform check", "terraform verify", "terraform inspect"],
-        "answer": ["terraform validate"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for importing existing resources?",
-        "options": ["terraform import", "terraform add", "terraform include", "terraform integrate"],
-        "answer": ["terraform import"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for generating a visual representation of the configuration?",
-        "options": ["terraform graph", "terraform visualize", "terraform diagram", "terraform map"],
-        "answer": ["terraform graph"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for marking a resource for recreation?",
-        "options": ["terraform taint", "terraform mark", "terraform flag", "terraform recreate"],
-        "answer": ["terraform taint"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for listing all existing workspaces?",
-        "options": ["terraform workspace list", "terraform workspace show", "terraform workspace display", "terraform workspace enumerate"],
-        "answer": ["terraform workspace list"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for selecting an existing workspace?",
-        "options": ["terraform workspace select", "terraform workspace choose", "terraform workspace pick", "terraform workspace switch"],
-        "answer": ["terraform workspace select"],
-        "multiple": false
-    },
-    {
         "question": "Which of the following are valid Terraform commands for deleting an existing workspace?",
         "options": ["terraform workspace delete", "terraform workspace remove", "terraform workspace discard", "terraform workspace erase"],
         "answer": ["terraform workspace delete"],
         "multiple": false
     },
     {
-        "question": "Which of the following are valid Terraform commands for creating a new workspace?",
-        "options": ["terraform workspace new", "terraform workspace create", "terraform workspace add", "terraform workspace initialize"],
-        "answer": ["terraform workspace new"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for managing state?",
-        "options": ["terraform state list", "terraform state show", "terraform state rm", "terraform state mv"],
-        "answer": ["terraform state list", "terraform state show", "terraform state rm", "terraform state mv"],
-        "multiple": true
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for formatting configuration files?",
-        "options": ["terraform fmt", "terraform format", "terraform beautify", "terraform tidy"],
-        "answer": ["terraform fmt"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for initializing a configuration?",
-        "options": ["terraform init", "terraform start", "terraform setup", "terraform configure"],
-        "answer": ["terraform init"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for applying a configuration?",
-        "options": ["terraform apply", "terraform execute", "terraform run", "terraform deploy"],
-        "answer": ["terraform apply"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for destroying infrastructure?",
-        "options": ["terraform destroy", "terraform remove", "terraform delete", "terraform teardown"],
-        "answer": ["terraform destroy"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for validating configuration files?",
-        "options": ["terraform validate", "terraform check", "terraform verify", "terraform inspect"],
-        "answer": ["terraform validate"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for importing existing resources?",
-        "options": ["terraform import", "terraform add", "terraform include", "terraform integrate"],
-        "answer": ["terraform import"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for generating a visual representation of the configuration?",
-        "options": ["terraform graph", "terraform visualize", "terraform diagram", "terraform map"],
-        "answer": ["terraform graph"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for marking a resource for recreation?",
-        "options": ["terraform taint", "terraform mark", "terraform flag", "terraform recreate"],
-        "answer": ["terraform taint"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for listing all existing workspaces?",
-        "options": ["terraform workspace list", "terraform workspace show", "terraform workspace display", "terraform workspace enumerate"],
-        "answer": ["terraform workspace list"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for selecting an existing workspace?",
-        "options": ["terraform workspace select", "terraform workspace choose", "terraform workspace pick", "terraform workspace switch"],
-        "answer": ["terraform workspace select"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for deleting an existing workspace?",
-        "options": ["terraform workspace delete", "terraform workspace remove", "terraform workspace discard", "terraform workspace erase"],
-        "answer": ["terraform workspace delete"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for creating a new workspace?",
-        "options": ["terraform workspace new", "terraform workspace create", "terraform workspace add", "terraform workspace initialize"],
-        "answer": ["terraform workspace new"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for managing state?",
-        "options": ["terraform state list", "terraform state show", "terraform state rm", "terraform state mv"],
-        "answer": ["terraform state list", "terraform state show", "terraform state rm", "terraform state mv"],
-        "multiple": true
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for formatting configuration files?",
-        "options": ["terraform fmt", "terraform format", "terraform beautify", "terraform tidy"],
-        "answer": ["terraform fmt"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for initializing a configuration?",
-        "options": ["terraform init", "terraform start", "terraform setup", "terraform configure"],
-        "answer": ["terraform init"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for applying a configuration?",
-        "options": ["terraform apply", "terraform execute", "terraform run", "terraform deploy"],
-        "answer": ["terraform apply"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for destroying infrastructure?",
-        "options": ["terraform destroy", "terraform remove", "terraform delete", "terraform teardown"],
-        "answer": ["terraform destroy"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for validating configuration files?",
-        "options": ["terraform validate", "terraform check", "terraform verify", "terraform inspect"],
-        "answer": ["terraform validate"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for importing existing resources?",
-        "options": ["terraform import", "terraform add", "terraform include", "terraform integrate"],
-        "answer": ["terraform import"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for generating a visual representation of the configuration?",
-        "options": ["terraform graph", "terraform visualize", "terraform diagram", "terraform map"],
-        "answer": ["terraform graph"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for marking a resource for recreation?",
-        "options": ["terraform taint", "terraform mark", "terraform flag", "terraform recreate"],
-        "answer": ["terraform taint"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for listing all existing workspaces?",
-        "options": ["terraform workspace list", "terraform workspace show", "terraform workspace display", "terraform workspace enumerate"],
-        "answer": ["terraform workspace list"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for selecting an existing workspace?",
-        "options": ["terraform workspace select", "terraform workspace choose", "terraform workspace pick", "terraform workspace switch"],
-        "answer": ["terraform workspace select"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for deleting an existing workspace?",
-        "options": ["terraform workspace delete", "terraform workspace remove", "terraform workspace discard", "terraform workspace erase"],
-        "answer": ["terraform workspace delete"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for creating a new workspace?",
-        "options": ["terraform workspace new", "terraform workspace create", "terraform workspace add", "terraform workspace initialize"],
-        "answer": ["terraform workspace new"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for managing state?",
-        "options": ["terraform state list", "terraform state show", "terraform state rm", "terraform state mv"],
-        "answer": ["terraform state list", "terraform state show", "terraform state rm", "terraform state mv"],
-        "multiple": true
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for formatting configuration files?",
-        "options": ["terraform fmt", "terraform format", "terraform beautify", "terraform tidy"],
-        "answer": ["terraform fmt"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for initializing a configuration?",
-        "options": ["terraform init", "terraform start", "terraform setup", "terraform configure"],
-        "answer": ["terraform init"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for applying a configuration?",
-        "options": ["terraform apply", "terraform execute", "terraform run", "terraform deploy"],
-        "answer": ["terraform apply"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for destroying infrastructure?",
-        "options": ["terraform destroy", "terraform remove", "terraform delete", "terraform teardown"],
-        "answer": ["terraform destroy"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for validating configuration files?",
-        "options": ["terraform validate", "terraform check", "terraform verify", "terraform inspect"],
-        "answer": ["terraform validate"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for importing existing resources?",
-        "options": ["terraform import", "terraform add", "terraform include", "terraform integrate"],
-        "answer": ["terraform import"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for generating a visual representation of the configuration?",
-        "options": ["terraform graph", "terraform visualize", "terraform diagram", "terraform map"],
-        "answer": ["terraform graph"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for marking a resource for recreation?",
-        "options": ["terraform taint", "terraform mark", "terraform flag", "terraform recreate"],
-        "answer": ["terraform taint"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for listing all existing workspaces?",
-        "options": ["terraform workspace list", "terraform workspace show", "terraform workspace display", "terraform workspace enumerate"],
-        "answer": ["terraform workspace list"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for selecting an existing workspace?",
-        "options": ["terraform workspace select", "terraform workspace choose", "terraform workspace pick", "terraform workspace switch"],
-        "answer": ["terraform workspace select"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for deleting an existing workspace?",
-        "options": ["terraform workspace delete", "terraform workspace remove", "terraform workspace discard", "terraform workspace erase"],
-        "answer": ["terraform workspace delete"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for creating a new workspace?",
-        "options": ["terraform workspace new", "terraform workspace create", "terraform workspace add", "terraform workspace initialize"],
-        "answer": ["terraform workspace new"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for managing state?",
-        "options": ["terraform state list", "terraform state show", "terraform state rm", "terraform state mv"],
-        "answer": ["terraform state list", "terraform state show", "terraform state rm", "terraform state mv"],
-        "multiple": true
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for formatting configuration files?",
-        "options": ["terraform fmt", "terraform format", "terraform beautify", "terraform tidy"],
-        "answer": ["terraform fmt"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for initializing a configuration?",
-        "options": ["terraform init", "terraform start", "terraform setup", "terraform configure"],
-        "answer": ["terraform init"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for applying a configuration?",
-        "options": ["terraform apply", "terraform execute", "terraform run", "terraform deploy"],
-        "answer": ["terraform apply"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for destroying infrastructure?",
-        "options": ["terraform destroy", "terraform remove", "terraform delete", "terraform teardown"],
-        "answer": ["terraform destroy"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for validating configuration files?",
-        "options": ["terraform validate", "terraform check", "terraform verify", "terraform inspect"],
-        "answer": ["terraform validate"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for importing existing resources?",
-        "options": ["terraform import", "terraform add", "terraform include", "terraform integrate"],
-        "answer": ["terraform import"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for generating a visual representation of the configuration?",
-        "options": ["terraform graph", "terraform visualize", "terraform diagram", "terraform map"],
-        "answer": ["terraform graph"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for marking a resource for recreation?",
-        "options": ["terraform taint", "terraform mark", "terraform flag", "terraform recreate"],
-        "answer": ["terraform taint"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for listing all existing workspaces?",
-        "options": ["terraform workspace list", "terraform workspace show", "terraform workspace display", "terraform workspace enumerate"],
-        "answer": ["terraform workspace list"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for selecting an existing workspace?",
-        "options": ["terraform workspace select", "terraform workspace choose", "terraform workspace pick", "terraform workspace switch"],
-        "answer": ["terraform workspace select"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for deleting an existing workspace?",
-        "options": ["terraform workspace delete", "terraform workspace remove", "terraform workspace discard", "terraform workspace erase"],
-        "answer": ["terraform workspace delete"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for creating a new workspace?",
-        "options": ["terraform workspace new", "terraform workspace create", "terraform workspace add", "terraform workspace initialize"],
-        "answer": ["terraform workspace new"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for managing state?",
-        "options": ["terraform state list", "terraform state show", "terraform state rm", "terraform state mv"],
-        "answer": ["terraform state list", "terraform state show", "terraform state rm", "terraform state mv"],
-        "multiple": true
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for formatting configuration files?",
-        "options": ["terraform fmt", "terraform format", "terraform beautify", "terraform tidy"],
-        "answer": ["terraform fmt"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for initializing a configuration?",
-        "options": ["terraform init", "terraform start", "terraform setup", "terraform configure"],
-        "answer": ["terraform init"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for applying a configuration?",
-        "options": ["terraform apply", "terraform execute", "terraform run", "terraform deploy"],
-        "answer": ["terraform apply"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for destroying infrastructure?",
-        "options": ["terraform destroy", "terraform remove", "terraform delete", "terraform teardown"],
-        "answer": ["terraform destroy"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for validating configuration files?",
-        "options": ["terraform validate", "terraform check", "terraform verify", "terraform inspect"],
-        "answer": ["terraform validate"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for importing existing resources?",
-        "options": ["terraform import", "terraform add", "terraform include", "terraform integrate"],
-        "answer": ["terraform import"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for generating a visual representation of the configuration?",
-        "options": ["terraform graph", "terraform visualize", "terraform diagram", "terraform map"],
-        "answer": ["terraform graph"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for marking a resource for recreation?",
-        "options": ["terraform taint", "terraform mark", "terraform flag", "terraform recreate"],
-        "answer": ["terraform taint"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for listing all existing workspaces?",
-        "options": ["terraform workspace list", "terraform workspace show", "terraform workspace display", "terraform workspace enumerate"],
-        "answer": ["terraform workspace list"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for selecting an existing workspace?",
-        "options": ["terraform workspace select", "terraform workspace choose", "terraform workspace pick", "terraform workspace switch"],
-        "answer": ["terraform workspace select"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for deleting an existing workspace?",
-        "options": ["terraform workspace delete", "terraform workspace remove", "terraform workspace discard", "terraform workspace erase"],
-        "answer": ["terraform workspace delete"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for creating a new workspace?",
-        "options": ["terraform workspace new", "terraform workspace create", "terraform workspace add", "terraform workspace initialize"],
-        "answer": ["terraform workspace new"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for managing state?",
-        "options": ["terraform state list", "terraform state show", "terraform state rm", "terraform state mv"],
-        "answer": ["terraform state list", "terraform state show", "terraform state rm", "terraform state mv"],
-        "multiple": true
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for formatting configuration files?",
-        "options": ["terraform fmt", "terraform format", "terraform beautify", "terraform tidy"],
-        "answer": ["terraform fmt"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for initializing a configuration?",
-        "options": ["terraform init", "terraform start", "terraform setup", "terraform configure"],
-        "answer": ["terraform init"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for applying a configuration?",
-        "options": ["terraform apply", "terraform execute", "terraform run", "terraform deploy"],
-        "answer": ["terraform apply"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for destroying infrastructure?",
-        "options": ["terraform destroy", "terraform remove", "terraform delete", "terraform teardown"],
-        "answer": ["terraform destroy"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for validating configuration files?",
-        "options": ["terraform validate", "terraform check", "terraform verify", "terraform inspect"],
-        "answer": ["terraform validate"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for importing existing resources?",
-        "options": ["terraform import", "terraform add", "terraform include", "terraform integrate"],
-        "answer": ["terraform import"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for generating a visual representation of the configuration?",
-        "options": ["terraform graph", "terraform visualize", "terraform diagram", "terraform map"],
-        "answer": ["terraform graph"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for marking a resource for recreation?",
-        "options": ["terraform taint", "terraform mark", "terraform flag", "terraform recreate"],
-        "answer": ["terraform taint"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for listing all existing workspaces?",
-        "options": ["terraform workspace list", "terraform workspace show", "terraform workspace display", "terraform workspace enumerate"],
-        "answer": ["terraform workspace list"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for selecting an existing workspace?",
-        "options": ["terraform workspace select", "terraform workspace choose", "terraform workspace pick", "terraform workspace switch"],
-        "answer": ["terraform workspace select"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for deleting an existing workspace?",
-        "options": ["terraform workspace delete", "terraform workspace remove", "terraform workspace discard", "terraform workspace erase"],
-        "answer": ["terraform workspace delete"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for creating a new workspace?",
-        "options": ["terraform workspace new", "terraform workspace create", "terraform workspace add", "terraform workspace initialize"],
-        "answer": ["terraform workspace new"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for managing state?",
-        "options": ["terraform state list", "terraform state show", "terraform state rm", "terraform state mv"],
-        "answer": ["terraform state list", "terraform state show", "terraform state rm", "terraform state mv"],
-        "multiple": true
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for formatting configuration files?",
-        "options": ["terraform fmt", "terraform format", "terraform beautify", "terraform tidy"],
-        "answer": ["terraform fmt"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for initializing a configuration?",
-        "options": ["terraform init", "terraform start", "terraform setup", "terraform configure"],
-        "answer": ["terraform init"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for applying a configuration?",
-        "options": ["terraform apply", "terraform execute", "terraform run", "terraform deploy"],
-        "answer": ["terraform apply"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for destroying infrastructure?",
-        "options": ["terraform destroy", "terraform remove", "terraform delete", "terraform teardown"],
-        "answer": ["terraform destroy"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for validating configuration files?",
-        "options": ["terraform validate", "terraform check", "terraform verify", "terraform inspect"],
-        "answer": ["terraform validate"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for importing existing resources?",
-        "options": ["terraform import", "terraform add", "terraform include", "terraform integrate"],
-        "answer": ["terraform import"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for generating a visual representation of the configuration?",
-        "options": ["terraform graph", "terraform visualize", "terraform diagram", "terraform map"],
-        "answer": ["terraform graph"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for marking a resource for recreation?",
-        "options": ["terraform taint", "terraform mark", "terraform flag", "terraform recreate"],
-        "answer": ["terraform taint"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for listing all existing workspaces?",
-        "options": ["terraform workspace list", "terraform workspace show", "terraform workspace display", "terraform workspace enumerate"],
-        "answer": ["terraform workspace list"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for selecting an existing workspace?",
-        "options": ["terraform workspace select", "terraform workspace choose", "terraform workspace pick", "terraform workspace switch"],
-        "answer": ["terraform workspace select"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for deleting an existing workspace?",
-        "options": ["terraform workspace delete", "terraform workspace remove", "terraform workspace discard", "terraform workspace erase"],
-        "answer": ["terraform workspace delete"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for creating a new workspace?",
-        "options": ["terraform workspace new", "terraform workspace create", "terraform workspace add", "terraform workspace initialize"],
-        "answer": ["terraform workspace new"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for managing state?",
-        "options": ["terraform state list", "terraform state show", "terraform state rm", "terraform state mv"],
-        "answer": ["terraform state list", "terraform state show", "terraform state rm", "terraform state mv"],
-        "multiple": true
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for formatting configuration files?",
-        "options": ["terraform fmt", "terraform format", "terraform beautify", "terraform tidy"],
-        "answer": ["terraform fmt"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for initializing a configuration?",
-        "options": ["terraform init", "terraform start", "terraform setup", "terraform configure"],
-        "answer": ["terraform init"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for applying a configuration?",
-        "options": ["terraform apply", "terraform execute", "terraform run", "terraform deploy"],
-        "answer": ["terraform apply"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for destroying infrastructure?",
-        "options": ["terraform destroy", "terraform remove", "terraform delete", "terraform teardown"],
-        "answer": ["terraform destroy"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for validating configuration files?",
-        "options": ["terraform validate", "terraform check", "terraform verify", "terraform inspect"],
-        "answer": ["terraform validate"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for importing existing resources?",
-        "options": ["terraform import", "terraform add", "terraform include", "terraform integrate"],
-        "answer": ["terraform import"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for generating a visual representation of the configuration?",
-        "options": ["terraform graph", "terraform visualize", "terraform diagram", "terraform map"],
-        "answer": ["terraform graph"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for marking a resource for recreation?",
-        "options": ["terraform taint", "terraform mark", "terraform flag", "terraform recreate"],
-        "answer": ["terraform taint"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for listing all existing workspaces?",
-        "options": ["terraform workspace list", "terraform workspace show", "terraform workspace display", "terraform workspace enumerate"],
-        "answer": ["terraform workspace list"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for selecting an existing workspace?",
-        "options": ["terraform workspace select", "terraform workspace choose", "terraform workspace pick", "terraform workspace switch"],
-        "answer": ["terraform workspace select"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for deleting an existing workspace?",
-        "options": ["terraform workspace delete", "terraform workspace remove", "terraform workspace discard", "terraform workspace erase"],
-        "answer": ["terraform workspace delete"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for creating a new workspace?",
-        "options": ["terraform workspace new", "terraform workspace create", "terraform workspace add", "terraform workspace initialize"],
-        "answer": ["terraform workspace new"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for managing state?",
-        "options": ["terraform state list", "terraform state show", "terraform state rm", "terraform state mv"],
-        "answer": ["terraform state list", "terraform state show", "terraform state rm", "terraform state mv"],
-        "multiple": true
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for formatting configuration files?",
-        "options": ["terraform fmt", "terraform format", "terraform beautify", "terraform tidy"],
-        "answer": ["terraform fmt"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for initializing a configuration?",
-        "options": ["terraform init", "terraform start", "terraform setup", "terraform configure"],
-        "answer": ["terraform init"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for applying a configuration?",
-        "options": ["terraform apply", "terraform execute", "terraform run", "terraform deploy"],
-        "answer": ["terraform apply"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for destroying infrastructure?",
-        "options": ["terraform destroy", "terraform remove", "terraform delete", "terraform teardown"],
-        "answer": ["terraform destroy"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for validating configuration files?",
-        "options": ["terraform validate", "terraform check", "terraform verify", "terraform inspect"],
-        "answer": ["terraform validate"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for importing existing resources?",
-        "options": ["terraform import", "terraform add", "terraform include", "terraform integrate"],
-        "answer": ["terraform import"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for generating a visual representation of the configuration?",
-        "options": ["terraform graph", "terraform visualize", "terraform diagram", "terraform map"],
-        "answer": ["terraform graph"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for marking a resource for recreation?",
-        "options": ["terraform taint", "terraform mark", "terraform flag", "terraform recreate"],
-        "answer": ["terraform taint"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for listing all existing workspaces?",
-        "options": ["terraform workspace list", "terraform workspace show", "terraform workspace display", "terraform workspace enumerate"],
-        "answer": ["terraform workspace list"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for selecting an existing workspace?",
-        "options": ["terraform workspace select", "terraform workspace choose", "terraform workspace pick", "terraform workspace switch"],
-        "answer": ["terraform workspace select"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for deleting an existing workspace?",
-        "options": ["terraform workspace delete", "terraform workspace remove", "terraform workspace discard", "terraform workspace erase"],
-        "answer": ["terraform workspace delete"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for creating a new workspace?",
-        "options": ["terraform workspace new", "terraform workspace create", "terraform workspace add", "terraform workspace initialize"],
-        "answer": ["terraform workspace new"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for managing state?",
-        "options": ["terraform state list", "terraform state show", "terraform state rm", "terraform state mv"],
-        "answer": ["terraform state list", "terraform state show", "terraform state rm", "terraform state mv"],
-        "multiple": true
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for formatting configuration files?",
-        "options": ["terraform fmt", "terraform format", "terraform beautify", "terraform tidy"],
-        "answer": ["terraform fmt"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for initializing a configuration?",
-        "options": ["terraform init", "terraform start", "terraform setup", "terraform configure"],
-        "answer": ["terraform init"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for applying a configuration?",
-        "options": ["terraform apply", "terraform execute", "terraform run", "terraform deploy"],
-        "answer": ["terraform apply"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for destroying infrastructure?",
-        "options": ["terraform destroy", "terraform remove", "terraform delete", "terraform teardown"],
-        "answer": ["terraform destroy"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for validating configuration files?",
-        "options": ["terraform validate", "terraform check", "terraform verify", "terraform inspect"],
-        "answer": ["terraform validate"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for importing existing resources?",
-        "options": ["terraform import", "terraform add", "terraform include", "terraform integrate"],
-        "answer": ["terraform import"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for generating a visual representation of the configuration?",
-        "options": ["terraform graph", "terraform visualize", "terraform diagram", "terraform map"],
-        "answer": ["terraform graph"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for marking a resource for recreation?",
-        "options": ["terraform taint", "terraform mark", "terraform flag", "terraform recreate"],
-        "answer": ["terraform taint"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for listing all existing workspaces?",
-        "options": ["terraform workspace list", "terraform workspace show", "terraform workspace display", "terraform workspace enumerate"],
-        "answer": ["terraform workspace list"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for selecting an existing workspace?",
-        "options": ["terraform workspace select", "terraform workspace choose", "terraform workspace pick", "terraform workspace switch"],
-        "answer": ["terraform workspace select"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for deleting an existing workspace?",
-        "options": ["terraform workspace delete", "terraform workspace remove", "terraform workspace discard", "terraform workspace erase"],
-        "answer": ["terraform workspace delete"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for creating a new workspace?",
-        "options": ["terraform workspace new", "terraform workspace create", "terraform workspace add", "terraform workspace initialize"],
-        "answer": ["terraform workspace new"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for managing state?",
-        "options": ["terraform state list", "terraform state show", "terraform state rm", "terraform state mv"],
-        "answer": ["terraform state list", "terraform state show", "terraform state rm", "terraform state mv"],
-        "multiple": true
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for formatting configuration files?",
-        "options": ["terraform fmt", "terraform format", "terraform beautify", "terraform tidy"],
-        "answer": ["terraform fmt"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for initializing a configuration?",
-        "options": ["terraform init", "terraform start", "terraform setup", "terraform configure"],
-        "answer": ["terraform init"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for applying a configuration?",
-        "options": ["terraform apply", "terraform execute", "terraform run", "terraform deploy"],
-        "answer": ["terraform apply"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for destroying infrastructure?",
-        "options": ["terraform destroy", "terraform remove", "terraform delete", "terraform teardown"],
-        "answer": ["terraform destroy"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for validating configuration files?",
-        "options": ["terraform validate", "terraform check", "terraform verify", "terraform inspect"],
-        "answer": ["terraform validate"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for importing existing resources?",
-        "options": ["terraform import", "terraform add", "terraform include", "terraform integrate"],
-        "answer": ["terraform import"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for generating a visual representation of the configuration?",
-        "options": ["terraform graph", "terraform visualize", "terraform diagram", "terraform map"],
-        "answer": ["terraform graph"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for marking a resource for recreation?",
-        "options": ["terraform taint", "terraform mark", "terraform flag", "terraform recreate"],
-        "answer": ["terraform taint"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for listing all existing workspaces?",
-        "options": ["terraform workspace list", "terraform workspace show", "terraform workspace display", "terraform workspace enumerate"],
-        "answer": ["terraform workspace list"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for selecting an existing workspace?",
-        "options": ["terraform workspace select", "terraform workspace choose", "terraform workspace pick", "terraform workspace switch"],
-        "answer": ["terraform workspace select"],
-        "multiple": false
-    },
-    {
-        "question": "Which of the following are valid Terraform commands for deleting an existing workspace?",
-        "options": ["terraform workspace delete", "terraform workspace remove", "terraform workspace discard", "terraform workspace erase"],
-        "answer": ["terraform workspace delete"],
-        "multiple": false
-    }
+    "question": "What is the default state file format used by Terraform?",
+    "options": ["JSON", "YAML", "XML", "HCL"],
+    "answer": ["JSON"],
+    "multiple": false
+  },
+  {
+    "question": "Which of the following are valid Terraform data sources?",
+    "options": ["aws_ami", "google_compute_image", "azure_storage_account", "docker_image"],
+    "answer": ["aws_ami", "google_compute_image"],
+    "multiple": true
+  },
+  {
+    "question": "Which of the following are valid Terraform commands for generating a plan?",
+    "options": ["terraform plan", "terraform preview", "terraform generate", "terraform blueprint"],
+    "answer": ["terraform plan"],
+    "multiple": false
+  },
+  {
+    "question": "Which of the following are valid Terraform commands for locking the state?",
+    "options": ["terraform state lock", "terraform state hold", "terraform state secure", "terraform state protect"],
+    "answer": ["terraform state lock"],
+    "multiple": false
+  },
+  {
+    "question": "Which of the following are valid Terraform commands for unlocking the state?",
+    "options": ["terraform state unlock", "terraform state release", "terraform state unhold", "terraform state unsecure"],
+    "answer": ["terraform state unlock"],
+    "multiple": false
+  },
+  {
+    "question": "Which of the following are valid Terraform commands for showing the current state?",
+    "options": ["terraform show", "terraform display", "terraform state show", "terraform state display"],
+    "answer": ["terraform show"],
+    "multiple": false
+  },
+  {
+    "question": "Which of the following are valid Terraform commands for tainting a resource?",
+    "options": ["terraform taint", "terraform mark", "terraform flag", "terraform stain"],
+    "answer": ["terraform taint"],
+    "multiple": false
+  },
+  {
+    "question": "Which of the following are valid Terraform commands for untainting a resource?",
+    "options": ["terraform untaint", "terraform unmark", "terraform unflag", "terraform clean"],
+    "answer": ["terraform untaint"],
+    "multiple": false
+  },
+  {
+    "question": "Which of the following are valid Terraform commands for refreshing the state?",
+    "options": ["terraform refresh", "terraform update", "terraform sync", "terraform reload"],
+    "answer": ["terraform refresh"],
+    "multiple": false
+  },
+  {
+    "question": "Which of the following are valid Terraform commands for validating a configuration?",
+    "options": ["terraform validate", "terraform check", "terraform verify", "terraform inspect"],
+    "answer": ["terraform validate"],
+    "multiple": false
+  },
+  {
+    "question": "What is the primary purpose of Terraform Cloud?",
+    "options": ["Remote state management", "Continuous Integration", "Configuration Management", "Infrastructure Monitoring"],
+    "answer": ["Remote state management"],
+    "multiple": false
+  },
+  {
+    "question": "Which of the following features are provided by Terraform Cloud?",
+    "options": ["Remote state storage", "Team access control", "Versioned state files", "All of the above"],
+    "answer": ["All of the above"],
+    "multiple": false
+  },
+  {
+    "question": "What is a 'workspace' in Terraform Cloud?",
+    "options": ["A container for state files", "A container for Terraform configurations", "A container for environment variables", "All of the above"],
+    "answer": ["All of the above"],
+    "multiple": false
+  },
+  {
+    "question": "Which of the following are benefits of using Terraform Cloud?",
+    "options": ["Enhanced collaboration", "Simplified workflow", "Improved security", "All of the above"],
+    "answer": ["All of the above"],
+    "multiple": false
+  },
+  {
+    "question": "Which of the following are valid Terraform Cloud features?",
+    "options": ["VCS integration", "Private module registry", "Policy enforcement", "All of the above"],
+    "answer": ["All of the above"],
+    "multiple": false
+  },
+  {
+    "question": "What is the purpose of 'Run Tasks' in Terraform Cloud?",
+    "options": ["To execute custom tasks during a run", "To manage state files", "To configure environment variables", "To create new workspaces"],
+    "answer": ["To execute custom tasks during a run"],
+    "multiple": false
+  },
+  {
+    "question": "Which of the following are valid Terraform Cloud access controls?",
+    "options": ["Read", "Write", "Admin", "All of the above"],
+    "answer": ["All of the above"],
+    "multiple": false
+  },
+  {
+    "question": "What is the purpose of the 'Private Module Registry' in Terraform Cloud?",
+    "options": ["To store and share private modules", "To manage state files", "To configure environment variables", "To create new workspaces"],
+    "answer": ["To store and share private modules"],
+    "multiple": false
+  },
+  {
+    "question": "Which of the following are valid Terraform Cloud pricing tiers?",
+    "options": ["Free", "Team", "Business", "All of the above"],
+    "answer": ["All of the above"],
+    "multiple": false
+  },
+  {
+    "question": "What is the purpose of 'Sentinel' in Terraform Cloud?",
+    "options": ["Policy as Code framework", "State management tool", "Configuration management tool", "Continuous integration tool"],
+    "answer": ["Policy as Code framework"],
+    "multiple": false
+  },
+  {
+    "question": "What is the primary purpose of Terraform state?",
+    "options": ["Store bindings between objects and resource instances", "Manage configuration files", "Track resource dependencies", "Automate infrastructure changes"],
+    "answer": ["Store bindings between objects and resource instances"],
+    "multiple": false
+  },
+  {
+    "question": "Which of the following are benefits of using Terraform state?",
+    "options": ["Improved performance for large infrastructures", "Tracking metadata", "Mapping real-world resources to configuration", "All of the above"],
+    "answer": ["All of the above"],
+    "multiple": false
+  },
+  {
+    "question": "What format is the Terraform state file stored in?",
+    "options": ["JSON", "YAML", "XML", "HCL"],
+    "answer": ["JSON"],
+    "multiple": false
+  },
+  {
+    "question": "Which of the following are valid Terraform state commands?",
+    "options": ["terraform state list", "terraform state show", "terraform state rm", "terraform state mv"],
+    "answer": ["terraform state list", "terraform state show", "terraform state rm", "terraform state mv"],
+    "multiple": true
+  },
+  {
+    "question": "What is the purpose of state file locking in Terraform?",
+    "options": ["Prevent simultaneous changes to the state file", "Encrypt the state file", "Backup the state file", "Validate the state file"],
+    "answer": ["Prevent simultaneous changes to the state file"],
+    "multiple": false
+  },
+  {
+    "question": "Which of the following are valid Terraform state management practices?",
+    "options": ["State file encryption", "State file versioning", "State file locking", "All of the above"],
+    "answer": ["All of the above"],
+    "multiple": false
+  },
+  {
+    "question": "What is resource drift in Terraform?",
+    "options": ["Discrepancy between state file and actual infrastructure", "Simultaneous changes to the state file", "Encryption of state file", "Versioning of state file"],
+    "answer": ["Discrepancy between state file and actual infrastructure"],
+    "multiple": false
+  },
+  {
+    "question": "Which of the following are valid Terraform commands for refreshing the state?",
+    "options": ["terraform refresh", "terraform update", "terraform sync", "terraform reload"],
+    "answer": ["terraform refresh"],
+    "multiple": false
+  },
+  {
+    "question": "Which of the following are valid Terraform commands for locking the state?",
+    "options": ["terraform state lock", "terraform state hold", "terraform state secure", "terraform state protect"],
+    "answer": ["terraform state lock"],
+    "multiple": false
+  },
+  {
+    "question": "Which of the following are valid Terraform commands for unlocking the state?",
+    "options": ["terraform state unlock", "terraform state release", "terraform state unhold", "terraform state unsecure"],
+    "answer": ["terraform state unlock"],
+    "multiple": false
+  },
+  {
+    "question": "What is the primary purpose of a Terraform backend?",
+    "options": ["Store state files", "Manage configuration files", "Track resource dependencies", "Automate infrastructure changes"],
+    "answer": ["Store state files"],
+    "multiple": false
+  },
+  {
+    "question": "Which of the following are benefits of using a Terraform backend?",
+    "options": ["State file versioning", "State file locking", "Centralized state management", "All of the above"],
+    "answer": ["All of the above"],
+    "multiple": false
+  },
+  {
+    "question": "What is the default backend type used by Terraform?",
+    "options": ["local", "remote", "cloud", "network"],
+    "answer": ["local"],
+    "multiple": false
+  },
+  {
+    "question": "Which of the following are valid Terraform backend types?",
+    "options": ["local", "remote", "cloud", "network"],
+    "answer": ["local", "remote"],
+    "multiple": true
+  },
+  {
+    "question": "What is the purpose of the 'remote' backend in Terraform?",
+    "options": ["Store state files in a centralized location", "Manage configuration files", "Track resource dependencies", "Automate infrastructure changes"],
+    "answer": ["Store state files in a centralized location"],
+    "multiple": false
+  },
+  {
+    "question": "Which of the following are valid Terraform backend configuration options?",
+    "options": ["organization", "workspace", "bucket", "All of the above"],
+    "answer": ["All of the above"],
+    "multiple": false
+  },
+  {
+    "question": "What is the purpose of state file locking in Terraform backends?",
+    "options": ["Prevent simultaneous changes to the state file", "Encrypt the state file", "Backup the state file", "Validate the state file"],
+    "answer": ["Prevent simultaneous changes to the state file"],
+    "multiple": false
+  },
+  {
+    "question": "Which of the following are valid Terraform backend arguments?",
+    "options": ["bucket", "key", "region", "All of the above"],
+    "answer": ["All of the above"],
+    "multiple": false
+  },
+  {
+    "question": "Which of the following are valid Terraform commands for initializing a backend?",
+    "options": ["terraform init", "terraform start", "terraform setup", "terraform configure"],
+    "answer": ["terraform init"],
+    "multiple": false
+  },
+  {
+    "question": "Which of the following are valid Terraform commands for changing backend configuration?",
+    "options": ["terraform init", "terraform reconfigure", "terraform migrate", "terraform update"],
+    "answer": ["terraform init"],
+    "multiple": false
+  }
 ]

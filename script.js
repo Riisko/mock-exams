@@ -194,7 +194,7 @@ function submitExam(questions) {
     // Display the score
     const scoreElement = document.getElementById('score');
     if (scoreElement) {
-        scoreElement.innerText = `You scored ${score} out of ${questions.length}`;
+        scoreElement.innerText = `You scored ${score} out of ${questions.length}: ${score/questions.length*100}%`;
     }
 
     // Scrolls to the top-left corner of the page smoothly.

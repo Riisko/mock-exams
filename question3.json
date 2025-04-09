@@ -1,0 +1,629 @@
+[
+  {
+    "question": "What is the primary purpose of Terraform?",
+    "options": [
+      "To manage application code deployments.",
+      "To provision and manage infrastructure as code.",
+      "To monitor application performance.",
+      "To configure operating systems."
+    ],
+    "answer": ["To provision and manage infrastructure as code."],
+    "multiple": false
+  },
+  {
+    "question": "Which command initializes a Terraform working directory by downloading providers and modules?",
+    "options": [
+      "terraform plan",
+      "terraform apply",
+      "terraform init",
+      "terraform validate"
+    ],
+    "answer": ["terraform init"],
+    "multiple": false
+  },
+  {
+    "question": "What does the `terraform plan` command do?",
+    "options": [
+      "Destroys all managed infrastructure.",
+      "Applies the changes defined in the configuration.",
+      "Initializes the backend and downloads plugins.",
+      "Creates an execution plan showing what Terraform will do."
+    ],
+    "answer": ["Creates an execution plan showing what Terraform will do."],
+    "multiple": false
+  },
+  {
+    "question": "Which file extension(s) are commonly used for Terraform configuration files?",
+    "options": [
+      ".tf",
+      ".yaml",
+      ".json",
+      ".tf.json"
+    ],
+    "answer": [".tf", ".tf.json"],
+    "multiple": true
+  },
+  {
+    "question": "What is the role of the Terraform state file?",
+    "options": [
+      "To store provider credentials securely.",
+      "To map Terraform configuration resources to real-world resources.",
+      "To define variables for the configuration.",
+      "To cache provider plugins."
+    ],
+    "answer": ["To map Terraform configuration resources to real-world resources."],
+    "multiple": false
+  },
+  {
+    "question": "Which block type is used to define a resource that Terraform should manage (e.g., a virtual machine, database)?",
+    "options": [
+      "variable",
+      "output",
+      "resource",
+      "provider"
+    ],
+    "answer": ["resource"],
+    "multiple": false
+  },
+  {
+    "question": "How do you define an input variable in Terraform?",
+    "options": [
+      "Using an `input` block.",
+      "Using a `variable` block.",
+      "Using a `parameter` block.",
+      "By defining it directly within a `resource` block."
+    ],
+    "answer": ["Using a `variable` block."],
+    "multiple": false
+  },
+  {
+    "question": "What is the purpose of the `terraform apply` command?",
+    "options": [
+      "To format the Terraform code according to canonical style.",
+      "To validate the syntax of the Terraform configuration.",
+      "To create, update, or destroy infrastructure according to the plan.",
+      "To show the current state of the managed infrastructure."
+    ],
+    "answer": ["To create, update, or destroy infrastructure according to the plan."],
+    "multiple": false
+  },
+  {
+    "question": "Which meta-argument allows you to create multiple instances of a resource or module?",
+    "options": [
+      "depends_on",
+      "lifecycle",
+      "count",
+      "for_each"
+    ],
+    "answer": ["count", "for_each"],
+    "multiple": true
+  },
+  {
+    "question": "What is a Terraform Provider?",
+    "options": [
+      "A reusable collection of Terraform configurations.",
+      "A plugin that interacts with a specific API (cloud provider, SaaS, etc.).",
+      "A way to store Terraform state remotely.",
+      "A function used within Terraform expressions."
+    ],
+    "answer": ["A plugin that interacts with a specific API (cloud provider, SaaS, etc.)."],
+    "multiple": false
+  },
+  {
+    "question": "Which command should be run to ensure Terraform configuration files adhere to the standard formatting and style?",
+    "options": [
+      "terraform validate",
+      "terraform plan",
+      "terraform lint",
+      "terraform fmt"
+    ],
+    "answer": ["terraform fmt"],
+    "multiple": false
+  },
+  {
+    "question": "What does the `terraform destroy` command do?",
+    "options": [
+      "Removes the Terraform binary from the system.",
+      "Deletes the Terraform state file.",
+      "Destroys all resources managed by the current Terraform configuration.",
+      "Reverts the last `terraform apply` operation."
+    ],
+    "answer": ["Destroys all resources managed by the current Terraform configuration."],
+    "multiple": false
+  },
+  {
+    "question": "How can you reference the value of an output from a Terraform module called `my_vpc`?",
+    "options": [
+      "output.my_vpc.value_name",
+      "resource.my_vpc.value_name",
+      "module.my_vpc.value_name",
+      "variable.my_vpc.value_name"
+    ],
+    "answer": ["module.my_vpc.value_name"],
+    "multiple": false
+  },
+  {
+    "question": "What is the purpose of a Terraform backend?",
+    "options": [
+      "To define the version of Terraform to use.",
+      "To specify where Terraform state snapshots are stored.",
+      "To configure provider credentials.",
+      "To manage different environments like staging and production."
+    ],
+    "answer": ["To specify where Terraform state snapshots are stored."],
+    "multiple": false
+  },
+  {
+    "question": "Which feature is crucial for collaboration when using remote backends?",
+    "options": [
+      "Input Variables",
+      "State Locking",
+      "Output Values",
+      "Data Sources"
+    ],
+    "answer": ["State Locking"],
+    "multiple": false
+  },
+  {
+    "question": "What is a Terraform Module?",
+    "options": [
+      "A single `.tf` file.",
+      "A specific version of a provider.",
+      "A container for multiple resources that are used together.",
+      "A Terraform Enterprise feature only."
+    ],
+    "answer": ["A container for multiple resources that are used together."],
+    "multiple": false
+  },
+  {
+    "question": "Which command checks the syntax and internal consistency of Terraform configuration files without accessing remote services?",
+    "options": [
+      "terraform init",
+      "terraform plan",
+      "terraform validate",
+      "terraform fmt"
+    ],
+    "answer": ["terraform validate"],
+    "multiple": false
+  },
+  {
+    "question": "How can you mark a variable as containing sensitive information, preventing it from being shown in console output?",
+    "options": [
+      "By setting `hidden = true` in the variable block.",
+      "By prefixing the variable name with `secret_`.",
+      "By setting `sensitive = true` in the variable block.",
+      "By storing it only in `terraform.tfvars.sensitive`."
+    ],
+    "answer": ["By setting `sensitive = true` in the variable block."],
+    "multiple": false
+  },
+  {
+    "question": "What is the purpose of the `depends_on` meta-argument?",
+    "options": [
+      "To specify which version of a provider a resource requires.",
+      "To create explicit dependencies between resources that Terraform cannot automatically infer.",
+      "To control the order of resource destruction.",
+      "To link modules together."
+    ],
+    "answer": ["To create explicit dependencies between resources that Terraform cannot automatically infer."],
+    "multiple": false
+  },
+  {
+    "question": "Which of the following are valid sources for Terraform modules? (Select ALL that apply)",
+    "options": [
+      "Local file paths",
+      "Terraform Registry",
+      "Git repositories (GitHub, Bitbucket, etc.)",
+      "Docker Hub"
+    ],
+    "answer": ["Local file paths", "Terraform Registry", "Git repositories (GitHub, Bitbucket, etc.)"],
+    "multiple": true
+  },
+  {
+    "question": "What is the function of `data` sources in Terraform?",
+    "options": [
+      "To store arbitrary data within the state file.",
+      "To define output values for the root module.",
+      "To fetch information from outside of Terraform (e.g., from a cloud provider API) for use in configuration.",
+      "To encrypt sensitive data before storing it."
+    ],
+    "answer": ["To fetch information from outside of Terraform (e.g., from a cloud provider API) for use in configuration."],
+    "multiple": false
+  },
+  {
+    "question": "Which command allows you to manage different named state files for the same configuration, often used for environments like staging and production?",
+    "options": [
+      "terraform state",
+      "terraform env",
+      "terraform workspace",
+      "terraform branch"
+    ],
+    "answer": ["terraform workspace"],
+    "multiple": false
+  },
+  {
+    "question": "The `lifecycle` block allows for customization of resource behavior. Which arguments can be used within it? (Select ALL that apply)",
+    "options": [
+      "create_before_destroy",
+      "prevent_destroy",
+      "ignore_changes",
+      "depends_on"
+    ],
+    "answer": ["create_before_destroy", "prevent_destroy", "ignore_changes"],
+    "multiple": true
+  },
+  {
+    "question": "What happens if you run `terraform apply` and provide the path to a saved plan file?",
+    "options": [
+      "Terraform ignores the plan file and creates a new one.",
+      "Terraform executes the actions defined in the provided plan file without prompting for confirmation (unless the plan is stale).",
+      "Terraform prompts for confirmation before applying the plan file.",
+      "Terraform validates the plan file and exits."
+    ],
+    "answer": ["Terraform executes the actions defined in the provided plan file without prompting for confirmation (unless the plan is stale)."],
+    "multiple": false
+  },
+  {
+    "question": "Which file is commonly used to specify values for input variables without modifying the main `.tf` files?",
+    "options": [
+      "main.tf",
+      "variables.tf",
+      "terraform.tfstate",
+      "terraform.tfvars"
+    ],
+    "answer": ["terraform.tfvars"],
+    "multiple": false
+  },
+  {
+    "question": "How can Terraform manage resources that were created outside of Terraform?",
+    "options": [
+      "Using the `terraform adopt` command.",
+      "Using the `terraform import` command.",
+      "Manually editing the state file.",
+      "Terraform cannot manage pre-existing resources."
+    ],
+    "answer": ["Using the `terraform import` command."],
+    "multiple": false
+  },
+  {
+    "question": "What is the purpose of the `output` block in Terraform?",
+    "options": [
+      "To display debug messages during `terraform apply`.",
+      "To define values that are easily queried after deployment and can be used by other Terraform configurations.",
+      "To specify the output format for `terraform plan`.",
+      "To store command output in the state file."
+    ],
+    "answer": ["To define values that are easily queried after deployment and can be used by other Terraform configurations."],
+    "multiple": false
+  },
+  {
+    "question": "When using `for_each` on a resource, what type of collection must be provided?",
+    "options": [
+      "A list of strings.",
+      "A map or a set of strings.",
+      "Any complex type (list, map, object).",
+      "Only a list of numbers."
+    ],
+    "answer": ["A map or a set of strings."],
+    "multiple": false
+  },
+  {
+    "question": "Which Terraform Cloud/Enterprise feature allows for policy enforcement using code (e.g., Sentinel)?",
+    "options": [
+      "Remote State Management",
+      "Private Module Registry",
+      "Version Control System Integration",
+      "Policy as Code"
+    ],
+    "answer": ["Policy as Code"],
+    "multiple": false
+  },
+  {
+    "question": "What is the default local backend for Terraform state?",
+    "options": [
+      "S3 Bucket",
+      "Consul",
+      "A file named `terraform.tfstate` in the working directory.",
+      "Terraform Cloud"
+    ],
+    "answer": ["A file named `terraform.tfstate` in the working directory."],
+    "multiple": false
+  },
+  {
+    "question": "Which command is used to view the resources currently tracked in the Terraform state file?",
+    "options": [
+      "terraform show",
+      "terraform state list",
+      "terraform resources",
+      "terraform state show"
+    ],
+    "answer": ["terraform state list"],
+    "multiple": false
+  },
+  {
+    "question": "You need to rename a resource `aws_instance.old_name` to `aws_instance.new_name` in your configuration *and* state file without destroying and recreating the resource. Which command should you use?",
+    "options": [
+      "terraform state replace aws_instance.old_name aws_instance.new_name",
+      "terraform rename aws_instance.old_name aws_instance.new_name",
+      "terraform state mv aws_instance.old_name aws_instance.new_name",
+      "terraform refresh"
+    ],
+    "answer": ["terraform state mv aws_instance.old_name aws_instance.new_name"],
+    "multiple": false
+  },
+  {
+    "question": "What is the primary benefit of using modules in Terraform?",
+    "options": [
+      "To speed up `terraform init`.",
+      "To reduce the size of the state file.",
+      "To enforce security policies.",
+      "To promote code reuse, organization, and maintainability."
+    ],
+    "answer": ["To promote code reuse, organization, and maintainability."],
+    "multiple": false
+  },
+  {
+    "question": "If a variable is defined in `variables.tf` but not assigned a value in `terraform.tfvars` or via `-var` flags, what will Terraform do?",
+    "options": [
+      "Fail with an error immediately.",
+      "Use an empty string `\"\"` as the value.",
+      "Prompt the user to enter a value during the `plan` or `apply` phase (unless a `default` is set).",
+      "Ignore the variable."
+    ],
+    "answer": ["Prompt the user to enter a value during the `plan` or `apply` phase (unless a `default` is set)."],
+    "multiple": false
+  },
+  {
+    "question": "Which language is Terraform's configuration language (HCL) primarily inspired by?",
+    "options": [
+      "Python",
+      "JSON",
+      "YAML",
+      "libucl (and other configuration languages)"
+    ],
+    "answer": ["libucl (and other configuration languages)"],
+    "multiple": false
+  },
+  {
+    "question": "What does the `terraform refresh` command do?",
+    "options": [
+      "Downloads the latest provider versions.",
+      "Re-formats the Terraform configuration files.",
+      "Updates the Terraform state file to match the real-world infrastructure.",
+      "Destroys and recreates all resources."
+    ],
+    "answer": ["Updates the Terraform state file to match the real-world infrastructure."],
+    "multiple": false
+  },
+  {
+    "question": "When using `count`, how do you reference the index of the current resource instance being created?",
+    "options": [
+      "count.index",
+      "each.index",
+      "this.index",
+      "index()"
+    ],
+    "answer": ["count.index"],
+    "multiple": false
+  },
+  {
+    "question": "When using `for_each`, how do you reference the key and value of the current resource instance being created?",
+    "options": [
+      "count.key / count.value",
+      "this.key / this.value",
+      "each.key / each.value",
+      "key() / value()"
+    ],
+    "answer": ["each.key / each.value"],
+    "multiple": false
+  },
+  {
+    "question": "What is the purpose of the `.terraform.lock.hcl` file?",
+    "options": [
+      "To store sensitive variable values.",
+      "To lock the state file during operations.",
+      "To record the exact provider versions selected during `terraform init`.",
+      "To cache module source code."
+    ],
+    "answer": ["To record the exact provider versions selected during `terraform init`."],
+    "multiple": false
+  },
+  {
+    "question": "Which of the following block types define configuration for Terraform itself?",
+    "options": [
+      "resource",
+      "provider",
+      "terraform",
+      "variable"
+    ],
+    "answer": ["terraform"],
+    "multiple": false
+  },
+  {
+    "question": "How can you prevent a specific resource from being destroyed by `terraform destroy`?",
+    "options": [
+      "Set `destroyable = false` in the resource block.",
+      "Use the `terraform protect` command.",
+      "Add a `lifecycle` block with `prevent_destroy = true`.",
+      "Comment out the resource block before running destroy."
+    ],
+    "answer": ["Add a `lifecycle` block with `prevent_destroy = true`."],
+    "multiple": false
+  },
+  {
+    "question": "Which built-in Terraform function can be used to read the content of a file into a string?",
+    "options": [
+      "read()",
+      "file()",
+      "lookup()",
+      "include()"
+    ],
+    "answer": ["file()"],
+    "multiple": false
+  },
+  {
+    "question": "What is the recommended way to handle secrets like API keys or passwords in Terraform configuration?",
+    "options": [
+      "Hardcode them directly in `.tf` files.",
+      "Store them in `terraform.tfvars` and commit it to version control.",
+      "Pass them via environment variables or use a secrets management tool (like HashiCorp Vault or cloud provider services) referenced via data sources.",
+      "Encrypt the state file."
+    ],
+    "answer": ["Pass them via environment variables or use a secrets management tool (like HashiCorp Vault or cloud provider services) referenced via data sources."],
+    "multiple": false
+  },
+  {
+    "question": "What does the `required_providers` block within the `terraform` block specify?",
+    "options": [
+      "The only providers allowed to be used in the configuration.",
+      "The source location and version constraints for providers needed by the configuration.",
+      "A list of providers that must be configured with credentials.",
+      "Providers that are required for Terraform Cloud execution."
+    ],
+    "answer": ["The source location and version constraints for providers needed by the configuration."],
+    "multiple": false
+  },
+  {
+    "question": "If `terraform plan` shows `-/+` next to a resource, what does it indicate?",
+    "options": [
+      "The resource will be created.",
+      "The resource will be destroyed.",
+      "The resource will be destroyed and then recreated (replaced).",
+      "The resource will be updated in-place."
+    ],
+    "answer": ["The resource will be destroyed and then recreated (replaced)."],
+    "multiple": false
+  },
+  {
+    "question": "What is the purpose of `local` values (defined in a `locals` block)?",
+    "options": [
+      "To define input variables that are local to a module.",
+      "To store temporary state information.",
+      "To define intermediate values or expressions, making the configuration easier to read and maintain.",
+      "To configure local provider settings."
+    ],
+    "answer": ["To define intermediate values or expressions, making the configuration easier to read and maintain."],
+    "multiple": false
+  },
+  {
+    "question": "Which command can show detailed information about a specific resource instance tracked in the state file?",
+    "options": [
+      "terraform state inspect <resource_address>",
+      "terraform state show <resource_address>",
+      "terraform show <resource_address>",
+      "terraform inspect <resource_address>"
+    ],
+    "answer": ["terraform state show <resource_address>"],
+    "multiple": false
+  },
+  {
+    "question": "Can you have multiple `provider` blocks for the same provider type (e.g., AWS) in a single Terraform configuration?",
+    "options": [
+      "No, only one provider block per type is allowed.",
+      "Yes, by using the `alias` meta-argument to differentiate between them (e.g., for different regions or accounts).",
+      "Yes, but only if they are defined in different modules.",
+      "No, this requires using separate Terraform workspaces."
+    ],
+    "answer": ["Yes, by using the `alias` meta-argument to differentiate between them (e.g., for different regions or accounts)."],
+    "multiple": false
+  },
+  {
+    "question": "What mechanism does Terraform use to determine if a resource needs to be updated?",
+    "options": [
+      "It checks the resource's creation timestamp.",
+      "It compares the current configuration arguments with the values stored in the state file.",
+      "It queries the resource's status via the provider API every time `plan` is run.",
+      "It relies solely on the `depends_on` argument."
+    ],
+    "answer": ["It compares the current configuration arguments with the values stored in the state file."],
+    "multiple": false
+  },
+  {
+    "question": "Which of these file names has special meaning for loading variable definitions?",
+    "options": [
+      "vars.tf",
+      "*.auto.tfvars",
+      "*.tfvars.json",
+      "inputs.tf"
+    ],
+    "answer": ["*.auto.tfvars", "*.tfvars.json"],
+    "multiple": true
+  },
+  {
+    "question": "What is the default action Terraform will take if a required provider is not specified in the `required_providers` block?",
+    "options": [
+      "Terraform will issue a warning but attempt to download it from the HashiCorp registry.",
+      "Terraform will fail during `init` with an error.",
+      "Terraform will prompt the user to select a provider source.",
+      "Terraform will automatically use the latest version available."
+    ],
+    "answer": ["Terraform will issue a warning but attempt to download it from the HashiCorp registry."],
+    "multiple": false
+  },
+  {
+    "question": "What is 'drift' in the context of Terraform?",
+    "options": [
+      "When the Terraform binary version differs from the one specified in the configuration.",
+      "When the actual state of infrastructure in the real world differs from the state recorded in the Terraform state file.",
+      "When multiple developers make conflicting changes to the Terraform configuration.",
+      "When provider versions change unexpectedly."
+    ],
+    "answer": ["When the actual state of infrastructure in the real world differs from the state recorded in the Terraform state file."],
+    "multiple": false
+  },
+  {
+    "question": "Which Terraform Cloud/Enterprise feature helps manage infrastructure for different teams or projects within the same organization?",
+    "options": [
+      "Workspaces",
+      "Teams & Governance",
+      "Private Module Registry",
+      "Sentinel Policies"
+    ],
+    "answer": ["Teams & Governance"],
+    "multiple": false
+  },
+  {
+    "question": "How do you reference an attribute of a resource created using `count`?",
+    "options": [
+      "aws_instance.example[count.index].id",
+      "aws_instance.example.*.id[count.index]",
+      "aws_instance.example[count.index].id",
+      "aws_instance.example.*.id"
+    ],
+    "answer": ["aws_instance.example[count.index].id"],
+    "multiple": false
+  },
+  {
+    "question": "How do you reference an attribute of a resource created using `for_each`?",
+    "options": [
+      "aws_instance.example[each.key].id",
+      "aws_instance.example.*.id[each.key]",
+      "aws_instance.example.each.key.id",
+      "aws_instance.example.*.id"
+    ],
+    "answer": ["aws_instance.example[each.key].id"],
+    "multiple": false
+  },
+  {
+    "question": "Which command can be used to remove a resource from Terraform management (state file) without destroying the actual infrastructure?",
+    "options": [
+      "terraform destroy -target=<resource_address>",
+      "terraform state forget <resource_address>",
+      "terraform state rm <resource_address>",
+      "terraform untrack <resource_address>"
+    ],
+    "answer": ["terraform state rm <resource_address>"],
+    "multiple": false
+  },
+  {
+    "question": "You want to ensure a specific S3 bucket is created before an EC2 instance that needs to access it. While Terraform might infer this dependency, how can you make it explicit?",
+    "options": [
+      "Use a `provisioner` block.",
+      "Add `depends_on = [aws_s3_bucket.my_bucket]` to the `aws_instance` resource.",
+      "Configure the backend to handle dependencies.",
+      "Define an output in the S3 bucket resource and reference it in the EC2 instance resource."
+    ],
+    "answer": ["Add `depends_on = [aws_s3_bucket.my_bucket]` to the `aws_instance` resource."],
+    "multiple": false
+  }
+]

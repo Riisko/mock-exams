@@ -23,14 +23,88 @@ h1 {
     margin-bottom: 15px;
 }
 
-.correct {
-    background-color: #d4edda;
+/* --- Zebra Striping (Alternating Backgrounds) --- */
+
+/* Light Mode: Style even-numbered question divs */
+#questions .question:nth-child(even) {
+    background-color: #f8f9fa; /* Bootstrap's light grey ($gray-100) */
 }
 
-.wrong {
-    background-color: #f8d7da;
+/* Light Mode: Style odd-numbered question divs (optional, often inherits body bg) */
+#questions .question:nth-child(odd) {
+    background-color: #ffffff; /* Explicitly white, or leave transparent */
+}
+
+/* Dark Mode: Style even-numbered question divs */
+[data-bs-theme="dark"] #questions .question:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.05); /* Subtle difference from default dark bg */
+}
+
+/* Dark Mode: Style odd-numbered question divs */
+[data-bs-theme="dark"] #questions .question:nth-child(odd) {
+    background-color: #212529; /* Match Bootstrap's default dark ($body-bg-dark) */
+}
+/* --- Correct/Wrong Feedback Styling --- */
+/* These styles will override the nth-child background when applied */
+
+.question.correct {
+    border-left: 5px solid #198754; /* Bootstrap success color */
+    background-color: rgba(25, 135, 84, 0.15); /* Slightly stronger success bg */
+}
+
+.question.wrong {
+    border-left: 5px solid #dc3545; /* Bootstrap danger color */
+    background-color: rgba(220, 53, 69, 0.15); /* Slightly stronger danger bg */
 }
 
 .form-check-label {
     cursor: pointer;
+}
+/* Optional: Slightly adjust switch appearance in dark mode if needed */
+[data-bs-theme="dark"] .form-switch .form-check-input {
+    /* Example: Change background color when checked in dark mode */
+    background-color: #ffe600;
+    border-color: #ffe600;
+}
+
+/* Optional: Style non-Bootstrap elements for dark mode */
+[data-bs-theme="dark"] body {
+   /* Ensures body background matches if not already set by Bootstrap */
+   background-color: #000000;
+   color: #dee2e6;
+}
+
+/* Add specific styles for your custom elements in dark mode */
+
+[data-bs-theme="dark"] #app {
+    background-color: #343a40;
+    color: #f8f9fa;
+    border: 1px solid #495057;
+}
+
+[data-bs-theme="dark"] input {
+    background-color: #343a40;
+    color: #f8f9fa;
+    border: 1px solid #495057;
+}
+
+
+
+
+/* Dark mode adjustments for correct/wrong feedback */
+[data-bs-theme="dark"] .question.correct {
+    border-left-color: #198754; /* Keep bright color */
+    background-color: rgba(25, 135, 84, 0.25); /* Darker success background */
+}
+
+[data-bs-theme="dark"] .question.wrong {
+    border-left-color: #dc3545; /* Keep bright color */
+    background-color: rgba(220, 53, 69, 0.25); /* Darker danger background */
+}
+
+
+/* Optional: Slightly adjust switch appearance in dark mode if needed */
+[data-bs-theme="dark"] .form-switch .form-check-input:checked {
+     background-color: #0d6efd; /* Default primary */
+     border-color: #0d6efd;
 }

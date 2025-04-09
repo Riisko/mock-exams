@@ -1,3 +1,68 @@
+// ===== START: Night Mode Logic =====
+
+// Select the theme switch checkbox
+const themeSwitch = document.getElementById('themeSwitch');
+const htmlElement = document.documentElement; // Target the <html> element
+
+// Function to set the theme
+const setTheme = (theme) => {
+    htmlElement.setAttribute('data-bs-theme', theme);
+    localStorage.setItem('theme', theme); // Save preference
+    // Update switch state (checked if dark)
+    if (themeSwitch) {
+       themeSwitch.checked = (theme === 'dark');
+    }
+};
+
+// Function to toggle the theme
+const toggleTheme = () => {
+    const currentTheme = htmlElement.getAttribute('data-bs-theme') || 'light'; // Default to light if unset
+    const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+    setTheme(newTheme);
+};
+
+// --- Initialization ---
+// 1. Check localStorage for saved theme preference on page load
+const savedTheme = localStorage.getItem('theme');
+
+// 2. Check OS preference if no theme saved
+//    (prefers-color-scheme: dark) evaluates to true if the user wants dark mode
+const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+// 3. Determine the initial theme
+//    Priority: Saved Theme > OS Preference > Default (Light)
+let initialTheme = 'light'; // Default
+if (savedTheme) {
+    initialTheme = savedTheme;
+} else if (prefersDark) {
+    initialTheme = 'dark';
+}
+
+// 4. Apply the initial theme *immediately*
+setTheme(initialTheme);
+
+// --- Event Listener ---
+// Add event listener to the switch *after* the DOM is loaded
+document.addEventListener('DOMContentLoaded', () => {
+    // Re-select the switch in case the script runs before the element exists
+    const themeSwitchElement = document.getElementById('themeSwitch');
+    if (themeSwitchElement) {
+        // Set initial check state correctly based on the theme already applied
+        themeSwitchElement.checked = (htmlElement.getAttribute('data-bs-theme') === 'dark');
+
+        // Add the listener
+        themeSwitchElement.addEventListener('change', toggleTheme);
+    } else {
+        console.warn("Theme switch element not found.");
+    }
+});
+
+
+// ===== END: Night Mode Logic =====
+
+
+// ===== Your Existing JavaScript =====
+
 document.getElementById('fileInput').addEventListener('change', function(event) {
     const file = event.target.files[0];
     if (file) {
@@ -7,7 +72,7 @@ document.getElementById('fileInput').addEventListener('change', function(event) 
                 const questions = JSON.parse(e.target.result);
                 displayQuestions(questions);
                 // Make sure the button exists before assigning onclick
-                const submitButton = document.querySelector('button');
+                const submitButton = document.querySelector('button[type="submit"], button:not([type])'); // More specific selector
                 if (submitButton) {
                     submitButton.onclick = function() {
                         submitExam(questions);
@@ -36,21 +101,21 @@ function displayQuestions(questions) {
     questions.forEach((q, index) => {
         // 1. Create the main container div for the question
         const questionDiv = document.createElement('div');
-        questionDiv.className = 'question mb-3'; // Add spacing
+        questionDiv.className = 'question mb-3 p-3 rounded'; // Add padding/rounding for better visual feedback
 
         // 2. Create the paragraph element for the question text
         const questionP = document.createElement('p');
-        // Use textContent here - it's safe as question text usually doesn't contain HTML
+        questionP.className = 'fw-bold'; // Make question text bold
         questionP.textContent = `${index + 1}. ${q.question}`;
         questionDiv.appendChild(questionP); // Add paragraph to the question div
 
         // 3. Create and add options using labels and inputs
         q.options.forEach((option, i) => {
-            // Create the label element
-            const label = document.createElement('label');
-            label.className = 'form-check-label d-block p-2'; // Style the label
+             // Create container for each option for better structure
+            const optionDiv = document.createElement('div');
+            optionDiv.className = 'form-check mb-2'; // Bootstrap class for styling radio/checkbox
+
             const inputId = `question${index}_option${i}`;
-            label.htmlFor = inputId; // Link label to input for accessibility
 
             // Create the input element (radio or checkbox)
             const input = document.createElement('input');
@@ -58,25 +123,40 @@ function displayQuestions(questions) {
             input.type = q.multiple ? 'checkbox' : 'radio';
             input.name = `question${index}`; // Group radios/checkboxes
             input.id = inputId;
-            // Assign the option string directly to the value property
-            input.value = option;
+            input.value = option; // Assign the option string directly
 
-            // *** THE KEY FIX ***
-            // Create a text node for the option text. This prevents HTML interpretation.
-            // We add a space before the option text for better spacing after the input button.
-            const optionTextNode = document.createTextNode(` ${option}`);
+             // Create the label element
+            const label = document.createElement('label');
+            label.className = 'form-check-label';
+            label.htmlFor = inputId; // Link label to input for accessibility
 
-            // Append the input AND the text node to the label
-            label.appendChild(input);
+            // Create a text node for the option text.
+            const optionTextNode = document.createTextNode(option); // No extra space needed with form-check structure
+
+            // Append input and text node to the label
             label.appendChild(optionTextNode);
 
-            // Append the complete label (with input and text) to the question div
-            questionDiv.appendChild(label);
+            // Append input and label to the optionDiv
+            optionDiv.appendChild(input);
+            optionDiv.appendChild(label);
+
+            // Append the optionDiv to the main question div
+            questionDiv.appendChild(optionDiv);
         });
 
         // 4. Append the fully constructed question div to the main container
         questionsContainer.appendChild(questionDiv);
     });
+
+     // Ensure the Submit button is visible *after* questions are displayed
+     const submitButton = document.querySelector('button[type="submit"], button:not([type])');
+     if (submitButton) {
+        submitButton.style.display = 'block'; // Or 'inline-block' etc.
+     }
+     const scoreElement = document.getElementById('score');
+     if(scoreElement) {
+        scoreElement.innerHTML = ''; // Clear previous score
+     }
 }
 
 function submitExam(questions) {
@@ -86,19 +166,23 @@ function submitExam(questions) {
     if (!questionsContainer) return;
 
     questions.forEach((q, index) => {
-        // Get selected options for this question
-        const selectedInputs = questionsContainer.querySelectorAll(`input[name="question${index}"]:checked`);
-        const selectedOptions = Array.from(selectedInputs).map(input => input.value);
-
         // Find the corresponding question div to apply styling
-        // Querying within questionsContainer is safer if elements get added/removed elsewhere
+        // Querying within questionsContainer is safer
         const questionDiv = questionsContainer.querySelector(`.question:nth-child(${index + 1})`);
+
+        // Get selected options for this question
+        const selectedInputs = questionDiv ? questionDiv.querySelectorAll(`input[name="question${index}"]:checked`) : [];
+        const selectedOptions = Array.from(selectedInputs).map(input => input.value);
 
         // Remove previous result classes before adding new ones
         if (questionDiv) {
-            questionDiv.classList.remove('correct', 'wrong');
+            questionDiv.classList.remove('correct', 'wrong'); // Remove both classes
 
-            if (arraysEqual(selectedOptions.sort(), q.answer.sort())) { // Sort arrays for consistent comparison
+            // Ensure q.answer is always an array, even for single-answer questions
+            const correctAnswers = Array.isArray(q.answer) ? q.answer : [q.answer];
+
+            // Sort both arrays for consistent comparison
+            if (arraysEqual(selectedOptions.sort(), correctAnswers.sort())) {
                 score++;
                 questionDiv.classList.add('correct');
             } else {
@@ -114,19 +198,15 @@ function submitExam(questions) {
     }
 
     // Scrolls to the top-left corner of the page smoothly.
-    // Use behavior: 'auto' for an instant jump.
     window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
-// Helper function to compare arrays (order might matter depending on use case)
-// Updated to handle cases where order doesn't matter by sorting first in submitExam
+// Helper function to compare arrays (order doesn't matter due to sorting before call)
 function arraysEqual(arr1, arr2) {
     if (arr1.length !== arr2.length) return false;
-    // Create copies before sorting if original order is needed elsewhere
-    const sortedArr1 = [...arr1].sort();
-    const sortedArr2 = [...arr2].sort();
-    for (let i = 0; i < sortedArr1.length; i++) {
-        if (sortedArr1[i] !== sortedArr2[i]) {
+    for (let i = 0; i < arr1.length; i++) {
+        // Use strict equality (===)
+        if (arr1[i] !== arr2[i]) {
             return false;
         }
     }

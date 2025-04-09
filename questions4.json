@@ -1,0 +1,626 @@
+[
+  {
+    "question": "What is the fundamental purpose of the Terraform state file?",
+    "options": [
+      "To store a backup of the Terraform configuration code.",
+      "To cache provider plugins for faster initialization.",
+      "To map declared resources in the configuration to real-world objects.",
+      "To track execution history and logs for Terraform runs."
+    ],
+    "answer": ["To map declared resources in the configuration to real-world objects."],
+    "multiple": false
+  },
+  {
+    "question": "Where is the Terraform state stored by default?",
+    "options": [
+      "In Terraform Cloud automatically.",
+      "In a local file named `terraform.tfstate` within the working directory.",
+      "In an S3 bucket configured in the provider block.",
+      "In memory during the Terraform process run."
+    ],
+    "answer": ["In a local file named `terraform.tfstate` within the working directory."],
+    "multiple": false
+  },
+  {
+    "question": "What is a primary risk associated with using the default local state file in a team environment?",
+    "options": [
+      "It requires Terraform Enterprise.",
+      "It does not support resource dependencies.",
+      "Potential for conflicts and data loss if multiple users run `apply` concurrently.",
+      "It cannot store information about complex resource types."
+    ],
+    "answer": ["Potential for conflicts and data loss if multiple users run `apply` concurrently."],
+    "multiple": false
+  },
+  {
+    "question": "What mechanism do Terraform backends use to prevent concurrent modification of the state file?",
+    "options": [
+      "Version Control System (VCS) locking.",
+      "File system permissions.",
+      "State Locking.",
+      "Transaction logging."
+    ],
+    "answer": ["State Locking."],
+    "multiple": false
+  },
+  {
+    "question": "Which `terraform state` subcommand is used to view the attributes of a specific resource instance managed in the state?",
+    "options": [
+      "terraform state list",
+      "terraform state show <resource_address>",
+      "terraform state mv <source> <destination>",
+      "terraform state pull"
+    ],
+    "answer": ["terraform state show <resource_address>"],
+    "multiple": false
+  },
+  {
+    "question": "You have refactored your Terraform configuration, renaming a resource block from `aws_instance.web` to `aws_instance.app_server`. How do you update the state file to reflect this change without destroying and recreating the instance?",
+    "options": [
+      "Run `terraform apply -refresh-only`.",
+      "Manually edit the `terraform.tfstate` file.",
+      "Run `terraform state mv aws_instance.web aws_instance.app_server`.",
+      "Run `terraform refresh`."
+    ],
+    "answer": ["Run `terraform state mv aws_instance.web aws_instance.app_server`."],
+    "multiple": false
+  },
+  {
+    "question": "What is the primary purpose of using a remote backend like S3, Azure Blob Storage, or Terraform Cloud?",
+    "options": [
+      "To automatically format Terraform code.",
+      "To enable secure, central storage and locking of the state file for team collaboration.",
+      "To enforce specific Terraform versions.",
+      "To directly integrate with CI/CD pipelines without extra configuration."
+    ],
+    "answer": ["To enable secure, central storage and locking of the state file for team collaboration."],
+    "multiple": false
+  },
+  {
+    "question": "Which `terraform state` subcommand is used to manually retrieve the current state file from the configured backend?",
+    "options": [
+      "terraform state get",
+      "terraform state download",
+      "terraform state fetch",
+      "terraform state pull"
+    ],
+    "answer": ["terraform state pull"],
+    "multiple": false
+  },
+  {
+    "question": "Which situation describes 'state drift'?",
+    "options": [
+      "When the Terraform version used locally differs from the one specified in the configuration.",
+      "When the actual infrastructure provisioned in the cloud differs from the resources recorded in the Terraform state file.",
+      "When two developers try to modify the same state file simultaneously.",
+      "When a module source cannot be found during `terraform init`."
+    ],
+    "answer": ["When the actual infrastructure provisioned in the cloud differs from the resources recorded in the Terraform state file."],
+    "multiple": false
+  },
+  {
+    "question": "How does Terraform typically detect state drift?",
+    "options": [
+      "By analyzing VCS commit history.",
+      "Through Sentinel policy checks.",
+      "During the refresh phase of a `terraform plan` or `terraform apply`.",
+      "By comparing the local configuration files with the state file."
+    ],
+    "answer": ["During the refresh phase of a `terraform plan` or `terraform apply`."],
+    "multiple": false
+  },
+   {
+    "question": "What is a potential security concern regarding Terraform state files?",
+    "options": [
+      "They can become very large.",
+      "They might contain sensitive data (like passwords or keys) in plain text.",
+      "They can only be read by Terraform Enterprise.",
+      "They are automatically deleted after each run."
+    ],
+    "answer": ["They might contain sensitive data (like passwords or keys) in plain text."],
+    "multiple": false
+  },
+  {
+    "question": "Which Terraform Cloud feature provides remote state storage and locking capabilities?",
+    "options": [
+      "Private Module Registry",
+      "Sentinel Policy as Code",
+      "Workspaces",
+      "Cost Estimation"
+    ],
+    "answer": ["Workspaces"],
+    "multiple": false
+  },
+  {
+    "question": "In Terraform Cloud, what is the primary function of a Workspace?",
+    "options": [
+      "To define reusable infrastructure components (like modules).",
+      "To manage a collection of infrastructure resources, including their state, variables, and run history.",
+      "To enforce security policies across an organization.",
+      "To store provider credentials securely."
+    ],
+    "answer": ["To manage a collection of infrastructure resources, including their state, variables, and run history."],
+    "multiple": false
+  },
+  {
+    "question": "What are the different types of runs that can be executed in a Terraform Cloud workspace? (Select ALL that apply)",
+    "options": [
+      "Plan",
+      "Apply",
+      "Destroy",
+      "Import"
+    ],
+    "answer": ["Plan", "Apply", "Destroy"],
+    "multiple": true
+  },
+  {
+    "question": "How does Terraform Cloud typically trigger runs when integrated with a Version Control System (VCS) like GitHub or GitLab?",
+    "options": [
+      "Based on a schedule defined in the workspace.",
+      "Manually initiated via the Terraform Cloud UI only.",
+      "Automatically upon code commits or pull requests to specified branches.",
+      "Via webhooks triggered by external monitoring tools."
+    ],
+    "answer": ["Automatically upon code commits or pull requests to specified branches."],
+    "multiple": false
+  },
+  {
+    "question": "What types of variables can be defined within a Terraform Cloud workspace? (Select ALL that apply)",
+    "options": [
+      "Terraform Variables (corresponding to `variable` blocks)",
+      "Environment Variables (for provider credentials, etc.)",
+      "Local Variables (using `locals` block syntax)",
+      "Policy Variables (for Sentinel)"
+    ],
+    "answer": ["Terraform Variables (corresponding to `variable` blocks)", "Environment Variables (for provider credentials, etc.)"],
+    "multiple": true
+  },
+  {
+    "question": "How can you mark a variable as sensitive in Terraform Cloud to prevent its value from being displayed in the UI or logs?",
+    "options": [
+      "Prefix the variable name with `sensitive_`.",
+      "Use the `locals` block in the configuration.",
+      "Check the 'Sensitive' checkbox when defining the variable in the Terraform Cloud UI.",
+      "Store the variable in a `.tfvars.sensitive` file."
+    ],
+    "answer": ["Check the 'Sensitive' checkbox when defining the variable in the Terraform Cloud UI."],
+    "multiple": false
+  },
+  {
+    "question": "What is the purpose of the Private Module Registry in Terraform Cloud/Enterprise?",
+    "options": [
+      "To store Terraform state files securely.",
+      "To host and share internal Terraform modules within an organization.",
+      "To cache public Terraform Registry modules.",
+      "To manage provider versions."
+    ],
+    "answer": ["To host and share internal Terraform modules within an organization."],
+    "multiple": false
+  },
+  {
+    "question": "Which Terraform Cloud/Enterprise feature allows defining and enforcing guardrails on infrastructure changes using code?",
+    "options": [
+      "Workspaces",
+      "Remote State Management",
+      "Policy as Code (Sentinel)",
+      "Run Triggers"
+    ],
+    "answer": ["Policy as Code (Sentinel)"],
+    "multiple": false
+  },
+  {
+    "question": "What is the difference between CLI-driven runs and VCS-driven runs in Terraform Cloud?",
+    "options": [
+      "CLI-driven runs use local state, while VCS-driven runs use remote state.",
+      "CLI-driven runs are executed from the user's terminal, while VCS-driven runs are triggered by commits and executed within Terraform Cloud's environment.",
+      "Only VCS-driven runs support policy checks.",
+      "CLI-driven runs do not require a Terraform Cloud workspace."
+    ],
+    "answer": ["CLI-driven runs are executed from the user's terminal, while VCS-driven runs are triggered by commits and executed within Terraform Cloud's environment."],
+    "multiple": false
+  },
+  {
+    "question": "Which `terraform` command is used to authenticate the Terraform CLI with Terraform Cloud or Enterprise?",
+    "options": [
+      "terraform init",
+      "terraform login",
+      "terraform remote config",
+      "terraform workspace select"
+    ],
+    "answer": ["terraform login"],
+    "multiple": false
+  },
+  {
+    "question": "If you configure the `remote` backend in your Terraform code, what happens when you run `terraform init`?",
+    "options": [
+      "It creates a local state file only.",
+      "It configures Terraform to use Terraform Cloud/Enterprise for state storage and potentially remote operations.",
+      "It downloads all modules from the private registry.",
+      "It validates the Sentinel policies."
+    ],
+    "answer": ["It configures Terraform to use Terraform Cloud/Enterprise for state storage and potentially remote operations."],
+    "multiple": false
+  },
+  {
+    "question": "What is the benefit of using Terraform Cloud's remote execution environment compared to running `terraform apply` locally with a remote backend?",
+    "options": [
+      "It allows bypassing state locking.",
+      "It provides a consistent, managed environment for runs, eliminating local machine inconsistencies.",
+      "It stores state files locally for faster access.",
+      "It does not require provider credentials."
+    ],
+    "answer": ["It provides a consistent, managed environment for runs, eliminating local machine inconsistencies."],
+    "multiple": false
+  },
+  {
+    "question": "What does the Cost Estimation feature in Terraform Cloud provide?",
+    "options": [
+      "Exact billing details for past infrastructure usage.",
+      "An estimate of the cost impact of the changes proposed in a Terraform plan.",
+      "A comparison of costs across different cloud providers.",
+      "Real-time cost monitoring of running resources."
+    ],
+    "answer": ["An estimate of the cost impact of the changes proposed in a Terraform plan."],
+    "multiple": false
+  },
+  {
+    "question": "In Terraform Cloud, what is the purpose of Variable Sets?",
+    "options": [
+      "To group related workspaces together.",
+      "To define sets of variables (Terraform or Environment) that can be applied across multiple workspaces.",
+      "To store different versions of Terraform state.",
+      "To configure network access controls for workspaces."
+    ],
+    "answer": ["To define sets of variables (Terraform or Environment) that can be applied across multiple workspaces."],
+    "multiple": false
+  },
+  {
+    "question": "Which `terraform state` command would you use to remove a resource instance from Terraform's management without destroying the actual infrastructure?",
+    "options": [
+      "terraform state delete <resource_address>",
+      "terraform state mv <resource_address> /dev/null",
+      "terraform state rm <resource_address>",
+      "terraform destroy -target=<resource_address>"
+    ],
+    "answer": ["terraform state rm <resource_address>"],
+    "multiple": false
+  },
+  {
+    "question": "Can the Terraform state file (`terraform.tfstate`) be safely committed to a version control system like Git?",
+    "options": [
+      "Yes, it's the recommended way to share state.",
+      "No, it often contains sensitive data and can cause merge conflicts.",
+      "Only if it's encrypted first.",
+      "Yes, but only for small projects."
+    ],
+    "answer": ["No, it often contains sensitive data and can cause merge conflicts."],
+    "multiple": false
+  },
+  {
+    "question": "How do Terraform Cloud workspaces differ from Terraform CLI workspaces?",
+    "options": [
+      "CLI workspaces store state locally by default; Cloud workspaces always use remote state managed by Terraform Cloud.",
+      "Terraform Cloud workspaces support VCS integration and remote execution; CLI workspaces do not.",
+      "There is no difference; they are aliases for the same concept.",
+      "CLI workspaces are managed via the `terraform workspace` command; Cloud workspaces are managed via the TFC UI/API."
+    ],
+    "answer": [
+        "CLI workspaces store state locally by default; Cloud workspaces always use remote state managed by Terraform Cloud.",
+        "Terraform Cloud workspaces support VCS integration and remote execution; CLI workspaces do not.",
+        "CLI workspaces are managed via the `terraform workspace` command; Cloud workspaces are managed via the TFC UI/API."
+    ],
+    "multiple": true
+  },
+  {
+    "question": "What is the function of the `terraform refresh` command in relation to the state file?",
+    "options": [
+      "It downloads the latest provider versions.",
+      "It updates the state file to match the real-world infrastructure, detecting drift.",
+      "It switches between different state files (workspaces).",
+      "It deletes the existing state file and creates a new one."
+    ],
+    "answer": ["It updates the state file to match the real-world infrastructure, detecting drift."],
+    "multiple": false
+  },
+  {
+    "question": "Which feature of Terraform Enterprise (but not necessarily all tiers of Terraform Cloud) provides enhanced audit logging capabilities?",
+    "options": [
+      "Remote State Storage",
+      "VCS Integration",
+      "Audit Trails",
+      "Private Module Registry"
+    ],
+    "answer": ["Audit Trails"],
+    "multiple": false
+  },
+  {
+    "question": "If state locking fails when using a remote backend, what is the likely consequence?",
+    "options": [
+      "Terraform will automatically retry until it succeeds.",
+      "Terraform will proceed without locking, risking state corruption.",
+      "Terraform will halt the operation (plan or apply) with an error.",
+      "Terraform will delete the state file."
+    ],
+    "answer": ["Terraform will halt the operation (plan or apply) with an error."],
+    "multiple": false
+  },
+  {
+    "question": "In Terraform Cloud, what allows one workspace's successful run to trigger a run in another workspace?",
+    "options": [
+      "Sentinel Policies",
+      "Variable Sets",
+      "Run Triggers",
+      "Remote Backend Configuration"
+    ],
+    "answer": ["Run Triggers"],
+    "multiple": false
+  },
+  {
+    "question": "When should you consider manually editing the Terraform state file?",
+    "options": [
+      "Frequently, to correct minor configuration issues.",
+      "To rename resources quickly.",
+      "Only as a last resort for recovery purposes, with extreme caution, as it's very risky.",
+      "Never, use `terraform state` commands instead."
+    ],
+    "answer": ["Only as a last resort for recovery purposes, with extreme caution, as it's very risky."],
+    "multiple": false
+  },
+  {
+    "question": "Which backend type stores the state file on the machine where Terraform commands are executed?",
+    "options": [
+      "remote",
+      "s3",
+      "local",
+      "azurerm"
+    ],
+    "answer": ["local"],
+    "multiple": false
+  },
+  {
+    "question": "What information is typically stored within the Terraform state? (Select ALL that apply)",
+    "options": [
+      "Mapping of resource configuration names to provider resource IDs.",
+      "Values of output variables.",
+      "Provider dependency versions.",
+      "Resource attribute values fetched from the provider."
+    ],
+    "answer": [
+        "Mapping of resource configuration names to provider resource IDs.",
+        "Values of output variables.",
+        "Resource attribute values fetched from the provider."
+    ],
+    "multiple": true
+  },
+  {
+    "question": "What is a key advantage of using Terraform Cloud's remote operations over local operations with a remote backend?",
+    "options": [
+      "Faster execution speed.",
+      "Eliminates the need for provider credentials on local machines.",
+      "Allows offline state modification.",
+      "Supports older Terraform versions."
+    ],
+    "answer": ["Eliminates the need for provider credentials on local machines."],
+    "multiple": false
+  },
+  {
+    "question": "How can you view the history of runs (plans and applies) for a specific infrastructure collection in Terraform Cloud?",
+    "options": [
+      "Using `terraform state history` command.",
+      "By inspecting the Git commit log.",
+      "Through the workspace's 'Runs' tab in the Terraform Cloud UI.",
+      "By querying the backend storage directly."
+    ],
+    "answer": ["Through the workspace's 'Runs' tab in the Terraform Cloud UI."],
+    "multiple": false
+  },
+  {
+    "question": "What is the role of Teams & Governance features in Terraform Cloud/Enterprise?",
+    "options": [
+      "To manage state file versions.",
+      "To define Role-Based Access Control (RBAC) for workspaces, modules, and policies.",
+      "To automate Terraform upgrades.",
+      "To connect different cloud provider accounts."
+    ],
+    "answer": ["To define Role-Based Access Control (RBAC) for workspaces, modules, and policies."],
+    "multiple": false
+  },
+  {
+    "question": "If a `terraform apply` operation is interrupted while using the local backend, what might be the status of the state file?",
+    "options": [
+      "It will be automatically rolled back to the previous state.",
+      "It might be corrupted or partially updated, potentially not reflecting the true infrastructure state.",
+      "It will be locked indefinitely.",
+      "It will be deleted."
+    ],
+    "answer": ["It might be corrupted or partially updated, potentially not reflecting the true infrastructure state."],
+    "multiple": false
+  },
+  {
+    "question": "What benefit does Terraform Cloud's VCS integration provide over manually uploading configurations?",
+    "options": [
+      "Enables automatic runs triggered by code changes, ensuring infrastructure reflects the committed configuration.",
+      "Allows editing Terraform code directly in the Terraform Cloud UI.",
+      "Reduces the size of the state file.",
+      "Improves local plan execution speed."
+    ],
+    "answer": ["Enables automatic runs triggered by code changes, ensuring infrastructure reflects the committed configuration."],
+    "multiple": false
+  },
+  {
+    "question": "You need to provide AWS credentials to Terraform runs executing within Terraform Cloud. What is the recommended approach?",
+    "options": [
+      "Hardcode credentials directly in the `.tf` files.",
+      "Store them as plain text Terraform Variables in the workspace.",
+      "Store them as sensitive Environment Variables within the Terraform Cloud workspace or via a Variable Set.",
+      "Commit an `aws_credentials.txt` file to the VCS repository."
+    ],
+    "answer": ["Store them as sensitive Environment Variables within the Terraform Cloud workspace or via a Variable Set."],
+    "multiple": false
+  },
+  {
+    "question": "Which Terraform CLI command interacts with state files managed by Terraform Cloud when using the `remote` backend?",
+    "options": [
+      "terraform plan",
+      "terraform apply",
+      "terraform state list",
+      "All of the above (depending on execution mode)"
+    ],
+    "answer": ["All of the above (depending on execution mode)"],
+    "multiple": false
+  },
+  {
+    "question": "What does it mean if a Terraform Cloud workspace is configured for 'Local' execution mode?",
+    "options": [
+      "The state file is stored locally, not in Terraform Cloud.",
+      "Plan and apply operations are performed on the user's machine, but state is still managed by Terraform Cloud.",
+      "The workspace is not connected to any VCS.",
+      "Sentinel policies are disabled for this workspace."
+    ],
+    "answer": ["Plan and apply operations are performed on the user's machine, but state is still managed by Terraform Cloud."],
+    "multiple": false
+  },
+  {
+    "question": "What is a primary difference between Terraform Cloud and Terraform Enterprise?",
+    "options": [
+      "Terraform Cloud is SaaS; Terraform Enterprise can be self-hosted.",
+      "Terraform Cloud does not support state storage.",
+      "Terraform Enterprise does not support VCS integration.",
+      "Only Terraform Cloud offers policy as code."
+    ],
+    "answer": ["Terraform Cloud is SaaS; Terraform Enterprise can be self-hosted."],
+    "multiple": false
+  },
+  {
+    "question": "If you accidentally delete a resource manually in the cloud provider console, what will Terraform likely do on the next `plan` or `apply`?",
+    "options": [
+      "Automatically remove the resource from the state file.",
+      "Report an error because the resource ID is missing.",
+      "Detect the drift (refresh phase) and propose to recreate the resource.",
+      "Ignore the missing resource."
+    ],
+    "answer": ["Detect the drift (refresh phase) and propose to recreate the resource."],
+    "multiple": false
+  },
+  {
+    "question": "Which file format(s) can be used for the Terraform state file when using backends?",
+    "options": [
+      "Always JSON.",
+      "YAML or JSON.",
+      "The format is specific to the backend implementation (often JSON internally).",
+      "Plain text."
+    ],
+    "answer": ["The format is specific to the backend implementation (often JSON internally)."],
+    "multiple": false
+  },
+  {
+    "question": "Can multiple Terraform Cloud workspaces share the same VCS repository?",
+    "options": [
+      "No, each workspace requires a unique repository.",
+      "Yes, by configuring different working directories and/or trigger paths within the workspace settings.",
+      "Yes, but only if they use different Terraform versions.",
+      "No, this requires Terraform Enterprise."
+    ],
+    "answer": ["Yes, by configuring different working directories and/or trigger paths within the workspace settings."],
+    "multiple": false
+  },
+  {
+    "question": "What is the purpose of the `terraform state push` command?",
+    "options": [
+      "To initiate a remote apply operation in Terraform Cloud.",
+      "To manually upload a local state file to the configured remote backend (use with caution).",
+      "To push local configuration files to the linked VCS repository.",
+      "To force an update of provider plugins."
+    ],
+    "answer": ["To manually upload a local state file to the configured remote backend (use with caution)."],
+    "multiple": false
+  },
+  {
+    "question": "In Terraform Cloud, notifications can be configured for which events? (Select ALL that apply)",
+    "options": [
+      "Run completion (applied, errored, planned)",
+      "Run requiring approval",
+      "Policy check overrides",
+      "New user added to the organization"
+    ],
+    "answer": ["Run completion (applied, errored, planned)", "Run requiring approval", "Policy check overrides"],
+    "multiple": true
+  },
+  {
+    "question": "What problem does the `ignore_changes` lifecycle argument help solve in relation to Terraform state?",
+    "options": [
+      "It prevents state locking issues.",
+      "It tells Terraform to disregard changes made to specific resource attributes outside of Terraform, preventing perpetual diffs.",
+      "It allows manual deletion of resources without state errors.",
+      "It encrypts specific attributes within the state file."
+    ],
+    "answer": ["It tells Terraform to disregard changes made to specific resource attributes outside of Terraform, preventing perpetual diffs."],
+    "multiple": false
+  },
+  {
+    "question": "Which configuration block is used to define the backend for state storage?",
+    "options": [
+      "provider",
+      "resource",
+      "terraform",
+      "backend"
+    ],
+    "answer": ["terraform"],
+    "multiple": false
+  },
+  {
+    "question": "Where is the backend configuration itself stored?",
+    "options": [
+      "Only in the remote state file.",
+      "Within the `.tf` configuration files, typically inside a `terraform` block.",
+      "In a separate `backend.conf` file only.",
+      "In Terraform Cloud workspace settings only."
+    ],
+    "answer": ["Within the `.tf` configuration files, typically inside a `terraform` block."],
+    "multiple": false
+  },
+  {
+    "question": "Can you use Terraform Cloud's features (like remote execution, policy checks) without storing your state file in Terraform Cloud?",
+    "options": [
+      "Yes, by using the 'local' execution mode.",
+      "No, Terraform Cloud requires managing the state file for most of its core features.",
+      "Yes, by configuring a different remote backend (e.g., S3) and linking the workspace.",
+      "Only if using Terraform Enterprise."
+    ],
+    "answer": ["No, Terraform Cloud requires managing the state file for most of its core features."],
+    "multiple": false
+  },
+  {
+    "question": "What is a common use case for Terraform CLI workspaces when using the local backend?",
+    "options": [
+      "Managing multiple instances of the same infrastructure configuration (e.g., dev, staging, prod) with separate state files.",
+      "Collaborating with multiple team members.",
+      "Integrating with CI/CD pipelines.",
+      "Storing sensitive data securely."
+    ],
+    "answer": ["Managing multiple instances of the same infrastructure configuration (e.g., dev, staging, prod) with separate state files."],
+    "multiple": false
+  },
+  {
+    "question": "If a resource is tracked in the state file, but the corresponding configuration block is removed from the `.tf` files, what will `terraform plan` propose?",
+    "options": [
+      "No changes.",
+      "To update the resource.",
+      "To destroy the resource.",
+      "An error due to inconsistency."
+    ],
+    "answer": ["To destroy the resource."],
+    "multiple": false
+  },
+  {
+    "question": "Which Terraform Cloud feature allows you to manage infrastructure using an API instead of the CLI or VCS integration?",
+    "options": [
+      "Private Module Registry",
+      "API-Driven Runs",
+      "Cost Estimation",
+      "Sentinel Policies"
+    ],
+    "answer": ["API-Driven Runs"],
+    "multiple": false
+  }
+]
